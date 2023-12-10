@@ -76,7 +76,7 @@ const footers = [
 
 function Footer() {
     return (
-        <footer className='mt-8'>
+        <footer>
             <div className="flex flex-col">
                 {/* Back link */}
                 <div className="w-full grid justify-center grid-cols-2 gap-x-10 md:grid-cols-3 px-8 pb-4 md:px-16 lg:px-20 bg-footer text-white">

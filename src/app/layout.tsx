@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} relative`}>
         <Navigation />
-        <main className="min-h-[700px] pt-[80px]">
+        <main className="min-h-[700px] pt-[80px] bg-[#fbfbfb] mb-8">
           {children}
         </main>
         <Footer />
