@@ -1,0 +1,757 @@
+[
+  {
+    "color": "#007f00",
+    "name": "Bright Ocean (rgb(0, 127, 0))",
+    "tone": "green"
+  },
+  {
+    "color": "#0e860e",
+    "name": "Vibrant Meadow (rgb(14, 134, 14))",
+    "tone": "green"
+  },
+  {
+    "color": "#1c8d1c",
+    "name": "Bright Leaf (rgb(28, 141, 28))",
+    "tone": "green"
+  },
+  {
+    "color": "#2a942a",
+    "name": "Bright Ocean (rgb(42, 148, 42))",
+    "tone": "green"
+  },
+  {
+    "color": "#389b38",
+    "name": "Light Sky (rgb(56, 155, 56))",
+    "tone": "green"
+  },
+  {
+    "color": "#46a246",
+    "name": "Sunny Fire (rgb(70, 162, 70))",
+    "tone": "green"
+  },
+  {
+    "color": "#55aa55",
+    "name": "Shadow Fire (rgb(85, 170, 85))",
+    "tone": "green"
+  },
+  {
+    "color": "#63b163",
+    "name": "Vibrant Leaf (rgb(99, 177, 99))",
+    "tone": "green"
+  },
+  {
+    "color": "#71b871",
+    "name": "Bright Ocean (rgb(113, 184, 113))",
+    "tone": "green"
+  },
+  {
+    "color": "#7fbf7f",
+    "name": "Bright Ocean (rgb(127, 191, 127))",
+    "tone": "green"
+  },
+  {
+    "color": "#8dc68d",
+    "name": "Dusty Sky (rgb(141, 198, 141))",
+    "tone": "green"
+  },
+  {
+    "color": "#9bcd9b",
+    "name": "Bright Sky (rgb(155, 205, 155))",
+    "tone": "green"
+  },
+  {
+    "color": "#aad4aa",
+    "name": "Light Wood (rgb(170, 212, 170))",
+    "tone": "green"
+  },
+  {
+    "color": "#b8dbb8",
+    "name": "Deep Leaf (rgb(184, 219, 184))",
+    "tone": "green"
+  },
+  {
+    "color": "#c6e2c6",
+    "name": "Bright Ocean (rgb(198, 226, 198))",
+    "tone": "green"
+  },
+  {
+    "color": "#d4e9d4",
+    "name": "Bright Wood (rgb(212, 233, 212))",
+    "tone": "green"
+  },
+  {
+    "color": "#e2f0e2",
+    "name": "Sunny Stone (rgb(226, 240, 226))",
+    "tone": "green"
+  },
+  {
+    "color": "#f0f7f0",
+    "name": "Pale Meadow (rgb(240, 247, 240))",
+    "tone": "green"
+  },
+  {
+    "color": "#7f7f00",
+    "name": "Pale Sky (rgb(127, 127, 0))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#888811",
+    "name": "Dusty Sky (rgb(136, 136, 17))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#909022",
+    "name": "Vibrant Berry (rgb(144, 144, 34))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#999933",
+    "name": "Bright Stone (rgb(153, 153, 51))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#a1a144",
+    "name": "Deep Ocean (rgb(161, 161, 68))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#aaaa55",
+    "name": "Sunny Wood (rgb(170, 170, 85))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#b2b266",
+    "name": "Deep Berry (rgb(178, 178, 102))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#bbbb77",
+    "name": "Deep Sky (rgb(187, 187, 119))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#c3c388",
+    "name": "Sunny Stone (rgb(195, 195, 136))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#cccc99",
+    "name": "Pale Stone (rgb(204, 204, 153))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#d4d4aa",
+    "name": "Shadow Leaf (rgb(212, 212, 170))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#ddddbb",
+    "name": "Shadow Ocean (rgb(221, 221, 187))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#e5e5cc",
+    "name": "Sunny Leaf (rgb(229, 229, 204))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#eeeedd",
+    "name": "Shadow Berry (rgb(238, 238, 221))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#f6f6ee",
+    "name": "Light Sky (rgb(246, 246, 238))",
+    "tone": "yellow"
+  },
+  {
+    "color": "#ff4400",
+    "name": "Shadow Sky (rgb(255, 68, 0))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ff4f0e",
+    "name": "Sunny Meadow (rgb(255, 79, 14))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ff591c",
+    "name": "Sunny Ocean (rgb(255, 89, 28))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ff632a",
+    "name": "Sunny Berry (rgb(255, 99, 42))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ff6e38",
+    "name": "Dusty Stone (rgb(255, 110, 56))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ff7846",
+    "name": "Sunny Meadow (rgb(255, 120, 70))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ff8255",
+    "name": "Light Meadow (rgb(255, 130, 85))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ff8d63",
+    "name": "Shadow Ocean (rgb(255, 141, 99))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ff9771",
+    "name": "Vibrant Sky (rgb(255, 151, 113))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ffa17f",
+    "name": "Deep Berry (rgb(255, 161, 127))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ffac8d",
+    "name": "Light Stone (rgb(255, 172, 141))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ffb69b",
+    "name": "Sunny Wood (rgb(255, 182, 155))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ffc0aa",
+    "name": "Vibrant Berry (rgb(255, 192, 170))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ffcbb8",
+    "name": "Deep Meadow (rgb(255, 203, 184))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ffd5c6",
+    "name": "Vibrant Wood (rgb(255, 213, 198))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ffdfd4",
+    "name": "Bright Stone (rgb(255, 223, 212))",
+    "tone": "orange"
+  },
+  {
+    "color": "#ffeae2",
+    "name": "Sunny Wood (rgb(255, 234, 226))",
+    "tone": "orange"
+  },
+  {
+    "color": "#fff4f0",
+    "name": "Vibrant Leaf (rgb(255, 244, 240))",
+    "tone": "orange"
+  },
+  {
+    "color": "#7f0000",
+    "name": "Sunny Wood (rgb(127, 0, 0))",
+    "tone": "red"
+  },
+  {
+    "color": "#8b1717",
+    "name": "Shadow Wood (rgb(139, 23, 23))",
+    "tone": "red"
+  },
+  {
+    "color": "#962e2e",
+    "name": "Pale Ocean (rgb(150, 46, 46))",
+    "tone": "red"
+  },
+  {
+    "color": "#a24545",
+    "name": "Sunny Fire (rgb(162, 69, 69))",
+    "tone": "red"
+  },
+  {
+    "color": "#ad5c5c",
+    "name": "Sunny Meadow (rgb(173, 92, 92))",
+    "tone": "red"
+  },
+  {
+    "color": "#b97373",
+    "name": "Light Berry (rgb(185, 115, 115))",
+    "tone": "red"
+  },
+  {
+    "color": "#c58b8b",
+    "name": "Sunny Fire (rgb(197, 139, 139))",
+    "tone": "red"
+  },
+  {
+    "color": "#d0a2a2",
+    "name": "Dusty Stone (rgb(208, 162, 162))",
+    "tone": "red"
+  },
+  {
+    "color": "#dcb9b9",
+    "name": "Light Stone (rgb(220, 185, 185))",
+    "tone": "red"
+  },
+  {
+    "color": "#e7d0d0",
+    "name": "Bright Meadow (rgb(231, 208, 208))",
+    "tone": "red"
+  },
+  {
+    "color": "#f3e7e7",
+    "name": "Sunny Stone (rgb(243, 231, 231))",
+    "tone": "red"
+  },
+  {
+    "color": "#ff1493",
+    "name": "Sunny Leaf (rgb(255, 20, 147))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ff249b",
+    "name": "Vibrant Meadow (rgb(255, 36, 155))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ff33a2",
+    "name": "Deep Fire (rgb(255, 51, 162))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ff43a9",
+    "name": "Pale Wood (rgb(255, 67, 169))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ff52b0",
+    "name": "Vibrant Leaf (rgb(255, 82, 176))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ff62b7",
+    "name": "Light Berry (rgb(255, 98, 183))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ff72be",
+    "name": "Vibrant Wood (rgb(255, 114, 190))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ff81c5",
+    "name": "Vibrant Meadow (rgb(255, 129, 197))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ff91cd",
+    "name": "Vibrant Stone (rgb(255, 145, 205))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ffa1d4",
+    "name": "Vibrant Sky (rgb(255, 161, 212))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ffb0db",
+    "name": "Shadow Berry (rgb(255, 176, 219))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ffc0e2",
+    "name": "Bright Meadow (rgb(255, 192, 226))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ffd0e9",
+    "name": "Bright Berry (rgb(255, 208, 233))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ffdff0",
+    "name": "Dusty Berry (rgb(255, 223, 240))",
+    "tone": "pink"
+  },
+  {
+    "color": "#ffeff7",
+    "name": "Sunny Berry (rgb(255, 239, 247))",
+    "tone": "pink"
+  },
+  {
+    "color": "#7f007f",
+    "name": "Bright Wood (rgb(127, 0, 127))",
+    "tone": "purple"
+  },
+  {
+    "color": "#860d86",
+    "name": "Bright Wood (rgb(134, 13, 134))",
+    "tone": "purple"
+  },
+  {
+    "color": "#8c1a8c",
+    "name": "Pale Stone (rgb(140, 26, 140))",
+    "tone": "purple"
+  },
+  {
+    "color": "#932893",
+    "name": "Bright Fire (rgb(147, 40, 147))",
+    "tone": "purple"
+  },
+  {
+    "color": "#9a359a",
+    "name": "Sunny Sky (rgb(154, 53, 154))",
+    "tone": "purple"
+  },
+  {
+    "color": "#a143a1",
+    "name": "Sunny Wood (rgb(161, 67, 161))",
+    "tone": "purple"
+  },
+  {
+    "color": "#a750a7",
+    "name": "Dusty Fire (rgb(167, 80, 167))",
+    "tone": "purple"
+  },
+  {
+    "color": "#ae5dae",
+    "name": "Deep Stone (rgb(174, 93, 174))",
+    "tone": "purple"
+  },
+  {
+    "color": "#b56bb5",
+    "name": "Dusty Wood (rgb(181, 107, 181))",
+    "tone": "purple"
+  },
+  {
+    "color": "#bb78bb",
+    "name": "Pale Sky (rgb(187, 120, 187))",
+    "tone": "purple"
+  },
+  {
+    "color": "#c286c2",
+    "name": "Light Stone (rgb(194, 134, 194))",
+    "tone": "purple"
+  },
+  {
+    "color": "#c993c9",
+    "name": "Shadow Sky (rgb(201, 147, 201))",
+    "tone": "purple"
+  },
+  {
+    "color": "#d0a1d0",
+    "name": "Light Fire (rgb(208, 161, 208))",
+    "tone": "purple"
+  },
+  {
+    "color": "#d6aed6",
+    "name": "Pale Wood (rgb(214, 174, 214))",
+    "tone": "purple"
+  },
+  {
+    "color": "#ddbbdd",
+    "name": "Dusty Sky (rgb(221, 187, 221))",
+    "tone": "purple"
+  },
+  {
+    "color": "#e4c9e4",
+    "name": "Light Leaf (rgb(228, 201, 228))",
+    "tone": "purple"
+  },
+  {
+    "color": "#ead6ea",
+    "name": "Light Sky (rgb(234, 214, 234))",
+    "tone": "purple"
+  },
+  {
+    "color": "#f1e4f1",
+    "name": "Light Fire (rgb(241, 228, 241))",
+    "tone": "purple"
+  },
+  {
+    "color": "#f8f1f8",
+    "name": "Pale Sky (rgb(248, 241, 248))",
+    "tone": "purple"
+  },
+  {
+    "color": "#00007f",
+    "name": "Dusty Wood (rgb(0, 0, 127))",
+    "tone": "blue"
+  },
+  {
+    "color": "#17178b",
+    "name": "Dusty Berry (rgb(23, 23, 139))",
+    "tone": "blue"
+  },
+  {
+    "color": "#2e2e96",
+    "name": "Pale Wood (rgb(46, 46, 150))",
+    "tone": "blue"
+  },
+  {
+    "color": "#4545a2",
+    "name": "Sunny Ocean (rgb(69, 69, 162))",
+    "tone": "blue"
+  },
+  {
+    "color": "#5c5cad",
+    "name": "Deep Wood (rgb(92, 92, 173))",
+    "tone": "blue"
+  },
+  {
+    "color": "#7373b9",
+    "name": "Pale Stone (rgb(115, 115, 185))",
+    "tone": "blue"
+  },
+  {
+    "color": "#8b8bc5",
+    "name": "Dusty Leaf (rgb(139, 139, 197))",
+    "tone": "blue"
+  },
+  {
+    "color": "#a2a2d0",
+    "name": "Shadow Fire (rgb(162, 162, 208))",
+    "tone": "blue"
+  },
+  {
+    "color": "#b9b9dc",
+    "name": "Shadow Meadow (rgb(185, 185, 220))",
+    "tone": "blue"
+  },
+  {
+    "color": "#d0d0e7",
+    "name": "Dusty Stone (rgb(208, 208, 231))",
+    "tone": "blue"
+  },
+  {
+    "color": "#e7e7f3",
+    "name": "Sunny Ocean (rgb(231, 231, 243))",
+    "tone": "blue"
+  },
+  {
+    "color": "#a52828",
+    "name": "Shadow Sky (rgb(165, 40, 40))",
+    "tone": "brown"
+  },
+  {
+    "color": "#ae3e3e",
+    "name": "Pale Stone (rgb(174, 62, 62))",
+    "tone": "brown"
+  },
+  {
+    "color": "#b75353",
+    "name": "Light Leaf (rgb(183, 83, 83))",
+    "tone": "brown"
+  },
+  {
+    "color": "#c06969",
+    "name": "Pale Ocean (rgb(192, 105, 105))",
+    "tone": "brown"
+  },
+  {
+    "color": "#c97e7e",
+    "name": "Pale Fire (rgb(201, 126, 126))",
+    "tone": "brown"
+  },
+  {
+    "color": "#d29393",
+    "name": "Dusty Berry (rgb(210, 147, 147))",
+    "tone": "brown"
+  },
+  {
+    "color": "#dba9a9",
+    "name": "Vibrant Wood (rgb(219, 169, 169))",
+    "tone": "brown"
+  },
+  {
+    "color": "#e4bebe",
+    "name": "Sunny Wood (rgb(228, 190, 190))",
+    "tone": "brown"
+  },
+  {
+    "color": "#edd4d4",
+    "name": "Dusty Ocean (rgb(237, 212, 212))",
+    "tone": "brown"
+  },
+  {
+    "color": "#f6e9e9",
+    "name": "Vibrant Fire (rgb(246, 233, 233))",
+    "tone": "brown"
+  },
+  {
+    "color": "#7f7f7f",
+    "name": "Dusty Stone (rgb(127, 127, 127))",
+    "tone": "grey"
+  },
+  {
+    "color": "#868686",
+    "name": "Vibrant Meadow (rgb(134, 134, 134))",
+    "tone": "grey"
+  },
+  {
+    "color": "#8c8c8c",
+    "name": "Bright Leaf (rgb(140, 140, 140))",
+    "tone": "grey"
+  },
+  {
+    "color": "#939393",
+    "name": "Sunny Sky (rgb(147, 147, 147))",
+    "tone": "grey"
+  },
+  {
+    "color": "#9a9a9a",
+    "name": "Vibrant Leaf (rgb(154, 154, 154))",
+    "tone": "grey"
+  },
+  {
+    "color": "#a1a1a1",
+    "name": "Sunny Ocean (rgb(161, 161, 161))",
+    "tone": "grey"
+  },
+  {
+    "color": "#a7a7a7",
+    "name": "Dusty Fire (rgb(167, 167, 167))",
+    "tone": "grey"
+  },
+  {
+    "color": "#aeaeae",
+    "name": "Dusty Wood (rgb(174, 174, 174))",
+    "tone": "grey"
+  },
+  {
+    "color": "#b5b5b5",
+    "name": "Dusty Ocean (rgb(181, 181, 181))",
+    "tone": "grey"
+  },
+  {
+    "color": "#bbbbbb",
+    "name": "Light Stone (rgb(187, 187, 187))",
+    "tone": "grey"
+  },
+  {
+    "color": "#c2c2c2",
+    "name": "Sunny Berry (rgb(194, 194, 194))",
+    "tone": "grey"
+  },
+  {
+    "color": "#c9c9c9",
+    "name": "Bright Fire (rgb(201, 201, 201))",
+    "tone": "grey"
+  },
+  {
+    "color": "#d0d0d0",
+    "name": "Vibrant Fire (rgb(208, 208, 208))",
+    "tone": "grey"
+  },
+  {
+    "color": "#d6d6d6",
+    "name": "Dusty Ocean (rgb(214, 214, 214))",
+    "tone": "grey"
+  },
+  {
+    "color": "#dddddd",
+    "name": "Shadow Wood (rgb(221, 221, 221))",
+    "tone": "grey"
+  },
+  {
+    "color": "#e4e4e4",
+    "name": "Bright Stone (rgb(228, 228, 228))",
+    "tone": "grey"
+  },
+  {
+    "color": "#eaeaea",
+    "name": "Deep Sky (rgb(234, 234, 234))",
+    "tone": "grey"
+  },
+  {
+    "color": "#f1f1f1",
+    "name": "Bright Sky (rgb(241, 241, 241))",
+    "tone": "grey"
+  },
+  {
+    "color": "#f8f8f8",
+    "name": "Sunny Fire (rgb(248, 248, 248))",
+    "tone": "grey"
+  },
+  {
+    "color": "#8b0000",
+    "name": "Coral Flame (rgb(139, 0, 0))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#920c0c",
+    "name": "Coral Glow (rgb(146, 12, 12))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#9a1819",
+    "name": "Blushing Charm (rgb(154, 24, 25))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#a22426",
+    "name": "Magenta Dream (rgb(162, 36, 38))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#a93033",
+    "name": "Ruby Flame (rgb(169, 48, 51))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#b13c40",
+    "name": "Crimson Whisper (rgb(177, 60, 64))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#b9484d",
+    "name": "Rosy Glow (rgb(185, 72, 77))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#c1545a",
+    "name": "Fuchsia Glow (rgb(193, 84, 90))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#c86166",
+    "name": "Coral Dream (rgb(200, 97, 102))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#d06d73",
+    "name": "Coral Twilight (rgb(208, 109, 115))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#d87980",
+    "name": "Fuchsia Twilight (rgb(216, 121, 128))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#e0858d",
+    "name": "Blushing Twilight (rgb(224, 133, 141))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#e7919a",
+    "name": "Rosy Blossom (rgb(231, 145, 154))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#ef9da7",
+    "name": "Fuchsia Charm (rgb(239, 157, 167))",
+    "tone": "redpink"
+  },
+  {
+    "color": "#f7a9b4",
+    "name": "Coral Dream (rgb(247, 169, 180))",
+    "tone": "redpink"
+  }
+]

@@ -1,6 +1,8 @@
-const Section = ({children} : {children: React.ReactElement | React.ReactElement[]}) => {
+import { cn } from "@/utils/utils";
+
+const Section = ({children, className} : {children: React.ReactElement | React.ReactElement[], className?: string}) => {
     return(
-        <section className='mt-4 md:mt-8 px-4 md:px-8 max-w-6xl lg:m-auto'>
+        <section className={cn('mt-4 md:mt-8 px-4 md:px-8 max-w-6xl lg:m-auto', className)}>
             { children }
         </section>
     )

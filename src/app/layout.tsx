@@ -2,9 +2,10 @@ import Footer from '@/components/footer';
 import Navigation from '@/components/navigation';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Playfair_Display as PlayfairDisplay } from 'next/font/google'
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const playfairDisplay = Inter({ subsets: ['vietnamese'] })
 
 export const metadata: Metadata = {
   title: 'Sơn Jotun Quang Tuyến',
@@ -18,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative`}>
+      <body className={`${playfairDisplay.className} relative`}>
         <Navigation />
-        <main className="min-h-[700px] pt-[80px] bg-[#fbfbfb] mb-8">
+        <main className="min-h-[700px] pt-[80px] bg-[#fbfbfb]">
           {children}
         </main>
         <Footer />
