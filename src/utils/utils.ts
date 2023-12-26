@@ -14,7 +14,7 @@ export function fetchArrayJson<T>(fileName : string) : T[] {
             throw new Error('File not found');
         }
         const jsonData = fs.readFileSync(filePath);
-        const items = JSON.parse(jsonData);
+        const items = JSON.parse(jsonData.toString());
         return items;
     } catch (err) {
         console.error('Error reading or parsing JSON file:', err);
