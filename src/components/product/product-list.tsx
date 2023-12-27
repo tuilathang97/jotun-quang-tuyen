@@ -1,17 +1,16 @@
+import { Product } from "@/app/product/[id]/page";
 import ProductCard from "./product-card";
 
 
-function ProductList() {
+function ProductList({ products } : { products: Product[] }) {
+
+    if (!products) return <></>;
+
     return (
         <div className='grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4'>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            {
+                products.map(product => <ProductCard key={product.id} product={product}/>)
+            }
         </div>
     );
 }

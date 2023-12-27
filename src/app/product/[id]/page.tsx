@@ -2,7 +2,7 @@ import Section from "@/components/section";
 import { fetchArrayJson } from "@/utils/utils";
 import Image from "next/image";
 
-interface Product {
+export interface Product {
   id: number;
   name: string;
   desktopImage: string;
@@ -13,9 +13,20 @@ interface Product {
   cardImages: string[];
   cardTitle: string;
   cardDescription: string;
+  price: string;
+  usq: string[];
+  stat: {
+    dryTime: string,
+    finish: string,
+    coverage: string,
+    coats: string
+  },
+  type: "interior" | 'exterior',
+  shortDescription: string,
+  tag: string
 }
 
-function getProduct(id : string) : Product | null | undefined {
+export function getProduct(id : string) : Product | null | undefined {
     const products = fetchArrayJson<Product>('products');
     return products?.find((product) => product?.id?.toString() === id);
 }
@@ -33,7 +44,7 @@ function ProductDetail({ params } : { params: { id: string } }) {
                     <div className="md:py-10">
                         <h1 className="my-6 lg:my-0 lg:mb-4 font-semibold text-2xl leading-8">{product.name}</h1>
                         <p className="leading-6">{product.description}</p>
-                        <p className="mt-6 font-bold text-orange-800">500.000 vnđ</p>
+                        <p className="mt-6 font-bold text-orange-800">{product.price} vnđ</p>
                     </div>
                 </div>
             </Section>
@@ -43,7 +54,7 @@ function ProductDetail({ params } : { params: { id: string } }) {
                         <Image className="md:max-h-[500px]" height='300' width={'500'} style={{ width: '100%', height: 'auto'}} src={`/images/covers/${product.cardImages[0]}`} alt=''/>
                     </div>
                     <div className="px-4 pt-6">
-                        <div className="flex gap-4 justify-center">
+                        <div className="flex gap-4 justify-center flex-wrap">
                             {product.highlights?.map((highlight) => {
                                 return(
                                     <div key={highlight} className="p-3 bg-amber-50 w-fit font-sans font-thin text-sm text-black">
@@ -61,20 +72,39 @@ function ProductDetail({ params } : { params: { id: string } }) {
             </Section>
             <Section>
                 <div className="pb-20">
-                    <h3 className="my-6 font-medium text-center text-2xl leading-10">Thông tin sản phẩm</h3>
+                    <h3 className="my-6 font-medium text-center text-2xl leading-10">Thông Tin Sản Phẩm</h3>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <div className="flex flex-col border-2 text-center py-8 px-4 rounded-s2 min-w-[200px] lg:min-w-[300px] lg:min-h-[200px] items-center justify-center ">
-                            <div className="text-xl text-gray-400 font-serif font-thin">Thời gian khô</div>
-                            <div className="mt-2 text-lg">2 Giờ</div>
-                        </div>
-                        <div className="flex flex-col border-2 text-center py-8 px-4 rounded-sm min-w-[200px] lg:min-w-[300px] lg:min-h-[200px] items-center justify-center ">
-                            <div className="text-xl text-gray-400 font-serif font-thin">Độ che phủ</div>
-                            <div className="mt-2 text-lg">10.15 m2</div>
-                        </div>
-                        <div className="flex flex-col border-2 text-center py-8 px-4 rounded-sm min-w-[200px] lg:min-w-[300px] lg:min-h-[200px] items-center justify-center ">
-                            <div className="text-xl text-gray-400 font-serif font-thin">Lớp phủ</div>
-                            <div className="mt-2 text-lg">2 lớp</div>
-                        </div>
+                        {
+                            product?.stat?.dryTime &&
+                            <div className="flex flex-col border-2 text-center py-8 px-4 rounded-s2 min-w-[200px] lg:min-w-[300px] lg:min-h-[200px] items-center justify-center ">
+                                <div className="text-xl text-gray-400 font-serif font-thin">Thời Gian Khô</div>
+                                <div className="mt-2 text-lg">{product.stat.dryTime}</div>
+                            </div>
+                        }
+
+                        {
+                            product?.stat?.finish &&
+                            <div className="flex flex-col border-2 text-center py-8 px-4 rounded-sm min-w-[200px] lg:min-w-[300px] lg:min-h-[200px] items-center justify-center ">
+                                <div className="text-xl text-gray-400 font-serif font-thin">Bề Mặt Hoàn Thiện</div>
+                                <div className="mt-2 text-lg">{product.stat.finish}</div>
+                            </div>
+                        }
+
+                        {
+                            product?.stat?.coverage &&
+                            <div className="flex flex-col border-2 text-center py-8 px-4 rounded-sm min-w-[200px] lg:min-w-[300px] lg:min-h-[200px] items-center justify-center ">
+                                <div className="text-xl text-gray-400 font-serif font-thin">Độ Che Phủ</div>
+                                <div className="mt-2 text-lg">{product.stat.coverage}</div>
+                            </div>
+                        }
+
+                        {
+                            product?.stat?.coats &&
+                            <div className="flex flex-col border-2 text-center py-8 px-4 rounded-sm min-w-[200px] lg:min-w-[300px] lg:min-h-[200px] items-center justify-center ">
+                                <div className="text-xl text-gray-400 font-serif font-thin">Lớp Phủ</div>
+                                <div className="mt-2 text-lg">{product.stat.coats}</div>
+                            </div>
+                        }
                     </div>
                 </div>
             </Section>
