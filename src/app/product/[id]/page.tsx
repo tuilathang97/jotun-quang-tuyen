@@ -1,5 +1,5 @@
 import Section from "@/components/section";
-import { fetchArrayJson } from "@/utils/utils";
+import { fetchArrayJson, getProduct } from "@/utils/utils";
 import Image from "next/image";
 
 export interface Product {
@@ -24,11 +24,6 @@ export interface Product {
   type: "interior" | 'exterior',
   shortDescription: string,
   tag: string
-}
-
-export function getProduct(id : string) : Product | null | undefined {
-    const products = fetchArrayJson<Product>('products');
-    return products?.find((product) => product?.id?.toString() === id);
 }
 
 function ProductDetail({ params } : { params: { id: string } }) {
