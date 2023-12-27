@@ -5,6 +5,7 @@ import { cn } from "@/utils/utils";
 import Link from 'next/link'
 import React from "react";
 import { BsFillTelephoneFill } from 'react-icons/bs';
+import ScrollLink from "../scroll-link";
 
 function Navigation() {
     return (
@@ -71,103 +72,145 @@ export function NavigationMenuDemo() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
+
         <NavigationMenuItem className="max-w-[300px] md:max-w-max">
-          <NavigationMenuTrigger>Sơn nội thất</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Sơn Jotun Majestic">
-                Nhà sang trọng, tường láng mịn, dễ lau chùi
-              </ListItem>
-              <ListItem href="/docs/installation" title="Sơn Jotun Essence">
-                Che phú tối đa chỉ sau 2 lớp
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Sơn Jontun Jotaplast">
-                Giá cả phải chăng, đáp ứng nhu cầu cơ bản
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
+          <ScrollLink to="/#exterior">
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Sơn ngoại thất
+            </NavigationMenuLink>
+          </ScrollLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem className="max-w-[300px] md:max-w-max">
-          <NavigationMenuTrigger>Sơn ngoại thất Jotun</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Sơn Jotun Jotashield">
-                Chống bám bụi, bảo vệ vượt trội, màu sắc bền lâu, che phủ các vết nứt
-              </ListItem>
-              <ListItem href="/docs/installation" title="Sơn lót Jotun Ultra Primer">
-                Sơn lót gốc nước ưu việt thích hợp cho tường bê tông mới
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Sơn Jotun Tough Shield">
-                Sự bảo vệ đáng tin cậy
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="max-w-[300px] md:max-w-max">
-          <NavigationMenuTrigger>Bảng giá</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="max-w-[300px] md:max-w-max">
-          <Link href="/docs" legacyBehavior passHref>
+          <ScrollLink to="/#interior">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Phụ kiện
+              Sơn nội thất
             </NavigationMenuLink>
-          </Link>
+          </ScrollLink>
         </NavigationMenuItem>
-        <NavigationMenuItem className="max-w-[300px] md:max-w-max">
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Bảng màu
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+
+        <Colors />
       </NavigationMenuList>
     </NavigationMenu>
+  )
+}
+
+const Accessories = () => {
+  return(
+    <NavigationMenuItem className="max-w-[300px] md:max-w-max">
+        <Link href="/docs" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            Phụ kiện
+          </NavigationMenuLink>
+        </Link>
+      </NavigationMenuItem>
+  )
+}
+
+const Colors = () => {
+  return(
+    <NavigationMenuItem className="max-w-[300px] md:max-w-max">
+      <Link href="/colors" legacyBehavior passHref>
+        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          Bảng màu
+        </NavigationMenuLink>
+      </Link>
+    </NavigationMenuItem>
+  )
+}
+
+const OutdoorDropdown = () => {
+  return (
+    <NavigationMenuItem className="max-w-[300px] md:max-w-max">
+      <NavigationMenuTrigger>Sơn nội thất</NavigationMenuTrigger>
+      <NavigationMenuContent>
+        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+          <li className="row-span-3">
+            <NavigationMenuLink asChild>
+              <a
+                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                href="/"
+              >
+                <div className="mb-2 mt-4 text-lg font-medium">
+                  shadcn/ui
+                </div>
+                <p className="text-sm leading-tight text-muted-foreground">
+                  Beautifully designed components built with Radix UI and
+                  Tailwind CSS.
+                </p>
+              </a>
+            </NavigationMenuLink>
+          </li>
+          <ListItem href="/docs" title="Sơn Jotun Majestic">
+            Nhà sang trọng, tường láng mịn, dễ lau chùi
+          </ListItem>
+          <ListItem href="/docs/installation" title="Sơn Jotun Essence">
+            Che phú tối đa chỉ sau 2 lớp
+          </ListItem>
+          <ListItem href="/docs/primitives/typography" title="Sơn Jontun Jotaplast">
+            Giá cả phải chăng, đáp ứng nhu cầu cơ bản
+          </ListItem>
+        </ul>
+      </NavigationMenuContent>
+    </NavigationMenuItem>
+  )
+}
+
+const IndoorDropdown = () => {
+  return(
+    <NavigationMenuItem className="max-w-[300px] md:max-w-max">
+      <NavigationMenuTrigger>Sơn ngoại thất Jotun</NavigationMenuTrigger>
+      <NavigationMenuContent>
+        <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+          <li className="row-span-3">
+            <NavigationMenuLink asChild>
+              <a
+                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                href="/"
+              >
+                <div className="mb-2 mt-4 text-lg font-medium">
+                  shadcn/ui
+                </div>
+                <p className="text-sm leading-tight text-muted-foreground">
+                  Beautifully designed components built with Radix UI and
+                  Tailwind CSS.
+                </p>
+              </a>
+            </NavigationMenuLink>
+          </li>
+          <ListItem href="/docs" title="Sơn Jotun Jotashield">
+            Chống bám bụi, bảo vệ vượt trội, màu sắc bền lâu, che phủ các vết nứt
+          </ListItem>
+          <ListItem href="/docs/installation" title="Sơn lót Jotun Ultra Primer">
+            Sơn lót gốc nước ưu việt thích hợp cho tường bê tông mới
+          </ListItem>
+          <ListItem href="/docs/primitives/typography" title="Sơn Jotun Tough Shield">
+            Sự bảo vệ đáng tin cậy
+          </ListItem>
+        </ul>
+      </NavigationMenuContent>
+    </NavigationMenuItem>
+  )
+}
+
+const PriceDropdown = () => {
+  return(
+    <NavigationMenuItem className="max-w-[300px] md:max-w-max">
+      <NavigationMenuTrigger>Bảng giá</NavigationMenuTrigger>
+      <NavigationMenuContent>
+        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+          {components.map((component) => (
+            <ListItem
+              key={component.title}
+              title={component.title}
+              href={component.href}
+            >
+              {component.description}
+            </ListItem>
+          ))}
+        </ul>
+      </NavigationMenuContent>
+    </NavigationMenuItem>
   )
 }
 

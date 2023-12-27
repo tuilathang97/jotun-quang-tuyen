@@ -1,5 +1,6 @@
 import Section from "@/components/section";
 import Heading from "@/components/heading";
+import { ProductList } from "../product";
 
 const links = [
     {

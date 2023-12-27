@@ -79,25 +79,27 @@ function Footer() {
         <footer>
             <div className="flex flex-col">
                 {/* Back link */}
-                <div className="w-full grid justify-center grid-cols-2 gap-x-10 md:grid-cols-3 px-8 pb-4 md:px-16 lg:px-20 bg-footer text-white">
-                    {
-                        footers.map((f : Footer)=> (
-                            <div key={f.title} className='pt-8 md:pb-8'>
-                                <h3 className="font-bold pb-2 tracking-widest">{ f.title }</h3>
-                                <ul className="flex flex-col gap-2">
-                                    {
-                                        f.items?.map((i) => (
-                                            <li key={i.text}>
-                                                <Link href={i.url} className='text-sm'>
-                                                    { i.text }
-                                                </Link>
-                                            </li>
-                                        ))
-                                    }
-                                </ul>
-                            </div>
-                        ))
-                    }
+                <div className="w-full bg-footer">
+                    <div className="max-w-6xl mx-auto grid justify-center grid-cols-2 gap-x-10 md:grid-cols-3 px-8 pb-4 md:px-16 lg:px-20 text-white">
+                        {
+                            footers.map((f : Footer)=> (
+                                <div key={f.title} className='pt-8 md:pb-8'>
+                                    <h3 className="font-bold pb-2 tracking-widest">{ f.title }</h3>
+                                    <ul className="flex flex-col gap-2">
+                                        {
+                                            f.items?.map((i) => (
+                                                <li key={i.text}>
+                                                    <Link href={i.url} className='text-sm'>
+                                                        { i.text }
+                                                    </Link>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
+                            ))
+                        }
+                    </div>
                 </div>
 
                 <div className='bg-footer-secondary py-6'>
