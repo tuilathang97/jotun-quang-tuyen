@@ -62,24 +62,24 @@ function TextAndTitle() {
               />
               <div className="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-75 rounded-xl">
               <h2 className="text-4xl font-bold text-center">Limited<br /> 
-              <span className="text-red-500">50% OFF</span>
+              <span className="text-red-600">50% OFF</span>
               </h2>
               
               </div>
           </div>
           <div className="p-6">
-              <h6 className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-red-500 uppercase">
+              <h4 className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-red-500 uppercase">
                 Khuyến Mãi
-              </h6>
+              </h4>
               <h4 className="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
                 Chào mừng quý khách
               </h4>
               <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
-                Cửa hàng luôn có những chương trình khuyến mãi đặc biệt và bất ngờ dành cho quý khách hàng, hãy đến cửa hàng hoặc gọi ngay vào hotline: <a className="text-red-500" href="tel:0898271703">+84898271703</a> để nhận ngay.
+                Cửa hàng luôn có những chương trình khuyến mãi đặc biệt và bất ngờ dành cho quý khách hàng, hãy đến cửa hàng hoặc gọi ngay vào hotline: <a className="text-red-600" href="tel:0898271703">+84898271703</a> để nhận ngay.
               </p>
               <a className="inline-block" href="tel:0898271703">
                 <button
-                    className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-red-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-red-600 uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                 >
                     Gọi ngay

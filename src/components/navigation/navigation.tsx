@@ -3,25 +3,27 @@
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 
 import { cn } from "@/utils/utils";
-import Link from 'next/link'
 import React from "react";
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import ScrollLink from "../scroll-link";
 import { FaCloudSunRain } from "react-icons/fa";
 import { IoBedOutline } from "react-icons/io5";
 import { IoColorPaletteOutline } from "react-icons/io5";
+import { IoHomeOutline } from "react-icons/io5";
+import { BsTelephone } from "react-icons/bs";
+import { TiInfoLargeOutline } from "react-icons/ti";
 
 function Navigation() {
     return (
         <nav className="fixed z-40 w-full bottom-0 md:top-0 md:bottom-auto">
             <header className="h-20 px-0 md:px-6 bg-accent">
-                <div className="flex items-center justify-around md:justify-between h-20 py-2 md:py-6">
-                    <div className="flex items-center">
+                <div className="flex items-center justify-center md:justify-between h-20 py-2 md:py-6">
+                    <div className="w-full md:w-auto flex justify-evenly md:justify-center items-center">
                         <div className="hidden lg:block mr-6">Logo</div>
                         <NavigationMenuDemo></NavigationMenuDemo>
                     </div>
                     <div>
-                        <a href="tel:0898271703" className='flex gap-2 items-center p-2 border-2 rounded-lg bg-primary text-secondary'>
+                        <a href="tel:0898271703" className='hidden md:flex gap-2 items-center p-2 border-2 rounded-lg bg-primary text-secondary'>
                             <BsFillTelephoneFill />
                             0898271703
                         </a>
@@ -77,26 +79,52 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
 
+        <NavigationMenuItem className="md:hidden max-w-[300px] md:max-w-max">
+          <ScrollLink to="/">
+            <span className={navigationMenuTriggerStyle()}>
+              <IoHomeOutline className='h-6 w-6'/>
+              Trang chủ
+            </span>
+          </ScrollLink>
+        </NavigationMenuItem>
+
         <NavigationMenuItem className="max-w-[300px] md:max-w-max">
           <ScrollLink to="/#exterior">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <span className={navigationMenuTriggerStyle()}>
               <FaCloudSunRain className='h-6 w-6'/>
               Ngoại thất
-            </NavigationMenuLink>
+            </span>
           </ScrollLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem className="max-w-[300px] md:max-w-max">
           <ScrollLink to="/#interior">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            <span className={navigationMenuTriggerStyle()}>
               <IoBedOutline className='h-6 w-6'/>
               Nội thất
-            </NavigationMenuLink>
+            </span>
           </ScrollLink>
         </NavigationMenuItem>
-        
+
         <Colors />
-        
+
+        <NavigationMenuItem className="hidden md:block max-w-[300px] md:max-w-max">
+          <ScrollLink to="/about">
+            <span className={navigationMenuTriggerStyle()}>
+              <TiInfoLargeOutline className='h-6 w-6'/>
+              Giới thiệu
+            </span>
+          </ScrollLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem className="md:hidden max-w-[300px] md:max-w-max">
+          <ScrollLink to="tel:0898271703">
+            <span className={navigationMenuTriggerStyle()}>
+              <BsTelephone className='h-6 w-6'/>
+              Gọi điện
+            </span>
+          </ScrollLink>
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   )
@@ -105,11 +133,11 @@ export function NavigationMenuDemo() {
 const Accessories = () => {
   return(
     <NavigationMenuItem className="max-w-[300px] md:max-w-max">
-        <Link href="/docs" legacyBehavior passHref>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+        <ScrollLink to="/docs">
+          <span className={navigationMenuTriggerStyle()}>
             Phụ kiện
-          </NavigationMenuLink>
-        </Link>
+          </span>
+        </ScrollLink>
       </NavigationMenuItem>
   )
 }
@@ -117,12 +145,12 @@ const Accessories = () => {
 const Colors = () => {
   return(
     <NavigationMenuItem className="max-w-[300px] md:max-w-max">
-      <Link href="/colors" legacyBehavior passHref>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+      <ScrollLink to="/colors">
+        <span className={navigationMenuTriggerStyle()}>
           <IoColorPaletteOutline className='h-6 w-6'/>
           Bảng màu
-        </NavigationMenuLink>
-      </Link>
+        </span>
+      </ScrollLink>
     </NavigationMenuItem>
   )
 }

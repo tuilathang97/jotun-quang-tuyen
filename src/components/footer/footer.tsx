@@ -18,23 +18,23 @@ const footers = [
         items: [
             {
                 text: 'Sơn Jotun nội thất',
-                url: '#',
+                url: '/#interior',
             },
             {
                 text: 'Sơn Jotun ngoại thất',
-                url: '#',
+                url: '/#exterior',
             },
             {
                 text: 'Sơn phủ Jotun',
-                url: '#',
+                url: '/#',
             },
             {
                 text: 'Sơn nền Jotun',
-                url: '#',
+                url: '/#',
             },
             {
                 text: 'Sơn dầu Jotun',
-                url: '#',
+                url: '/#',
             }
         ]
     },
@@ -43,11 +43,11 @@ const footers = [
         items: [
             {
                 text: 'Cọ quét',
-                url: '#',
+                url: '/#',
             },
             {
                 text: 'Bột',
-                url: '#',
+                url: '/#',
             }
         ]
     },
@@ -56,11 +56,11 @@ const footers = [
         items: [
             {
                 text: 'Giới thiệu',
-                url: '#'
+                url: '/about'
             },
             {
-                text: 'Blog',
-                url: '#'
+                text: 'Bảng màu',
+                url: '/colors'
             },
             {
                 text: 'Bảng giá',
@@ -114,8 +114,15 @@ function Footer() {
                             <SiZalo className='w-8 h-8 text-white'/> 
                         </Link>
                     </div>
+                    <div className="text-white flex justify-center mt-4 text-sm text-center">
+                        <ul>
+                            <li><a className="underline" href="https://maps.app.goo.gl/Js9YqWYvGkoci7hm9">Google Maps</a></li>
+                            <li>Địa chỉ: 243 ĐT826C, Long Hậu, Cần Giuộc, Long An</li>
+                            <li>Điện thoại: 0898.271.703</li>
+                        </ul>
+                    </div>
                     <div className='text-white flex justify-center mt-4 text-sm'>
-                        © 2023 Jotun Quang Tuyến - www.sonjotunquangtuyen.com
+                        © 2023 Jotun Long Hậu - www.jotunlonghau.com
                     </div>
                 </div>
             </div>

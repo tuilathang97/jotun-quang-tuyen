@@ -30,7 +30,7 @@ function Colors({}) {
     return(
         <Section>
             <>
-                <h1 className="text-4xl text-center mb-10 font-light">Bảng màu</h1>
+                <h1 className="text-5xl text-center mb-10 font-bold">Bảng màu</h1>
                 <p className="text-xl text-center leading-8">Cửa hàng chúng tôi có đa dạng màu sắc hấp dẫn được trình bày dưới dạng khối sơn và mẫu giấy - giúp bạn có một điểm xuất phát để chọn màu sắc của mình.</p>
                 {
                     avaiable_tones.map(tone => <ColorSection key={tone} colors={colors} tone={tone}/>)
@@ -66,7 +66,8 @@ function AlertDemo() {
     <Alert className="bg-yellow-100 mb-10">
       <AlertTitle>Chú ý</AlertTitle>
       <AlertDescription>
-        Màu sắc có thể có chút sai lệch khi hiển thị trên các màn hình khác nhau. Để có trải nghiệm chính xác nhất vui lòng đến cửa hàng tại ...
+        Màu sắc có thể có chút sai lệch khi hiển thị trên các màn hình khác nhau. Để có trải nghiệm chính xác nhất vui lòng đến cửa hàng tại 
+        <a className="text-md font-bold hover:text-red-700" href="https://maps.app.goo.gl/Js9YqWYvGkoci7hm9"> 243 ĐT826C, Long Hậu, Cần Giuộc, Long An</a>
       </AlertDescription>
     </Alert>
   )
