@@ -26,8 +26,6 @@ export default function Home() {
       <Banner />
       <PromoBanner/>
 
-      
-
       <TextAndTitle3 />
       <TextAndTitle2 />
 
@@ -134,7 +132,7 @@ function TextAndTitle2() {
                   </div>
                 </div>
                 <div className="flex order-first block w-full mt-0 md:mt-12 aspect-square lg:mt-0">
-                  <Image width={500} height={500} className="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/images/innovation-multicolor-colourcard.webp" />
+                  <Image width={500} height={500} className="object-cover h-[100%] rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/images/innovation-multicolor-colourcard.webp" />
                 </div>
               </div>
             </div>
@@ -154,7 +152,7 @@ function TextAndTitle3() {
             <div className="relative flex-col items-start m-auto align-middle">
               <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
                 <div className="flex order-first block w-full mt-12 aspect-square lg:mt-0">
-                  <Image width={500} height={500} className="object-cover rounded-3xl object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/images/testing-for-the-extreme.webp" />
+                  <Image width={500} height={500} className="object-cover rounded-3xl h-[100%] object-center w-full mx-auto bg-gray-300 lg:ml-auto " alt="hero" src="/images/testing-for-the-extreme.webp" />
                 </div>
                 <div className="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                   <div className="max-w-xl text-center lg:text-left">
