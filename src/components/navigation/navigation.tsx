@@ -1,17 +1,21 @@
 'use client';
 
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
+
 import { cn } from "@/utils/utils";
 import Link from 'next/link'
 import React from "react";
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import ScrollLink from "../scroll-link";
+import { FaCloudSunRain } from "react-icons/fa";
+import { IoBedOutline } from "react-icons/io5";
+import { IoColorPaletteOutline } from "react-icons/io5";
 
 function Navigation() {
     return (
-        <nav className="fixed z-40 w-full">
-            <header className="h-20 px-6 bg-accent">
-                <div className="flex items-center justify-between h-20 py-6">
+        <nav className="fixed z-40 w-full bottom-0 md:top-0 md:bottom-auto">
+            <header className="h-20 px-0 md:px-6 bg-accent">
+                <div className="flex items-center justify-around md:justify-between h-20 py-2 md:py-6">
                     <div className="flex items-center">
                         <div className="hidden lg:block mr-6">Logo</div>
                         <NavigationMenuDemo></NavigationMenuDemo>
@@ -76,7 +80,8 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem className="max-w-[300px] md:max-w-max">
           <ScrollLink to="/#exterior">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Sơn ngoại thất
+              <FaCloudSunRain className='h-6 w-6'/>
+              Ngoại thất
             </NavigationMenuLink>
           </ScrollLink>
         </NavigationMenuItem>
@@ -84,12 +89,14 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem className="max-w-[300px] md:max-w-max">
           <ScrollLink to="/#interior">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Sơn nội thất
+              <IoBedOutline className='h-6 w-6'/>
+              Nội thất
             </NavigationMenuLink>
           </ScrollLink>
         </NavigationMenuItem>
-
+        
         <Colors />
+        
       </NavigationMenuList>
     </NavigationMenu>
   )
@@ -112,6 +119,7 @@ const Colors = () => {
     <NavigationMenuItem className="max-w-[300px] md:max-w-max">
       <Link href="/colors" legacyBehavior passHref>
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          <IoColorPaletteOutline className='h-6 w-6'/>
           Bảng màu
         </NavigationMenuLink>
       </Link>

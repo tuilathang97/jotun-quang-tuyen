@@ -1,7 +1,8 @@
 import { BsClockHistory } from 'react-icons/bs'; 
 import { FaShippingFast } from 'react-icons/fa'; 
 import { SiAdguard } from 'react-icons/si'; 
-import { SlCalender } from 'react-icons/sl'; 
+import { FaWifi } from "react-icons/fa6";
+import { ImPriceTags } from "react-icons/im";
 
 function PromoBanner() {
     return (
@@ -11,8 +12,8 @@ function PromoBanner() {
             </p>
             <div className='grid grid-cols-2 md:grid-cols-4 px-10 py-10 justify-start items-start gap-10 bg-promo md:mt-0'>
                 <div className='flex flex-col mx-auto w-[120px] justify-center items-center text-sm gap-4 text-center font-semi-bold text-yellow-700 font-mono'>
-                    <BsClockHistory className='w-12 h-12 text-yellow-600'/>
-                    Giao Hàng nhanh chóng
+                    <FaWifi className='w-12 h-12 text-yellow-600'/>
+                    Đặt online tiện lợi, nhanh chóng
                 </div>
                 <div className='flex flex-col mx-auto w-[120px] justify-center items-center text-sm gap-4 text-center font-semi-bold text-yellow-700 font-mono'>
                     <FaShippingFast className='w-12 h-12 text-yellow-600'/>
@@ -20,11 +21,11 @@ function PromoBanner() {
                 </div>
                 <div className='flex flex-col mx-auto w-[120px] justify-center items-center text-sm gap-4 text-center font-semi-bold text-yellow-700 font-mono'>
                     <SiAdguard className='w-12 h-12 text-yellow-600'/>
-                    Bảo hành trọn đời
+                    Cam kết chính hãng 100%
                 </div>
                 <div className='flex flex-col mx-auto w-[120px] justify-center items-center text-sm gap-4 text-center font-semi-bold text-yellow-700 font-mono'>
-                    <SlCalender className='w-12 h-12 text-yellow-600'/>
-                    Hoạt động 24/7
+                    <ImPriceTags className='w-12 h-12 text-yellow-600'/>
+                    Giá rẻ nhất mọi thời điểm
                 </div>
             </div>
             

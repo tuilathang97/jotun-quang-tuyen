@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfairDisplay.className} relative`}>
         <Navigation />
-        <main className="min-h-[700px] pt-[80px] bg-[#fbfbfb]">
+        <main className="min-h-[700px] pt-0 md:pt-[80px] bg-[#fbfbfb]">
           {children}
         </main>
         <Footer />

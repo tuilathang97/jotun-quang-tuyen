@@ -7,11 +7,8 @@ type ScrollLinkProps = {
 };
 
 const ScrollLink: React.FC<ScrollLinkProps> = ({ to, children }) => {
-    
-
     return (
         <Link href={`${to}`} scroll={true}>
-            {/* <a onClick={handleClick}>{}</a> */}
             {children}
         </Link>
     );
