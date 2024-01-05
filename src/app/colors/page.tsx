@@ -35,17 +35,15 @@ function Colors({}) {
                 </>
             </Section>
             <>
-                {
-                    avaiable_tones.map(tone => <ColorSection key={tone} colors={colors} tone={tone}/>)
-                }
+                <ColorSection colors={colors}/>
             </>
             <AlertDemo/>
         </>
     )
 }
 
-function ColorSection({colors, tone} : { colors: Color[],tone:Tone}) {
-    if (!tone) return null;
+function ColorSection({colors} : { colors: Color[]}) {
+    if (!colors) return null;
     return(
         <div className="my-10">
             <ul className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-y-4 gap-x-2 justify-center items-center mb-4">
