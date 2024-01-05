@@ -12,6 +12,7 @@ import { IoColorPaletteOutline } from "react-icons/io5";
 import { IoHomeOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { TiInfoLargeOutline } from "react-icons/ti";
+import Image from 'next/image'
 
 function Navigation() {
     return (
@@ -19,7 +20,9 @@ function Navigation() {
             <header className="h-20 px-0 md:px-6 bg-accent">
                 <div className="flex items-center justify-center md:justify-between h-20 py-2 md:py-6">
                     <div className="w-full md:w-auto flex justify-evenly md:justify-center items-center">
-                        <div className="hidden lg:block mr-6">Logo</div>
+                        <div className="hidden lg:block mr-6">
+                          <Image src="/images/jotun.svg" width={120} height={24} alt="main logo"></Image>
+                        </div>
                         <NavigationMenuDemo></NavigationMenuDemo>
                     </div>
                     <div>
