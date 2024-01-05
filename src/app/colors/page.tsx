@@ -23,36 +23,38 @@ function getColors() : Color[] {
 
 function Colors({}) {
     const colors = getColors();
-    console.log(colors);
     if (!colors) {
         return <></>;
     }
     return(
-        <Section>
+        <>
+            <Section>
+                <>
+                    <h1 className="text-5xl text-center mb-10 font-bold">Bảng màu</h1>
+                    <p className="text-xl text-center leading-8">Cửa hàng chúng tôi có đa dạng màu sắc hấp dẫn được trình bày dưới dạng khối sơn và mẫu giấy - giúp bạn có một điểm xuất phát để chọn màu sắc của mình.</p>
+                </>
+            </Section>
             <>
-                <h1 className="text-5xl text-center mb-10 font-bold">Bảng màu</h1>
-                <p className="text-xl text-center leading-8">Cửa hàng chúng tôi có đa dạng màu sắc hấp dẫn được trình bày dưới dạng khối sơn và mẫu giấy - giúp bạn có một điểm xuất phát để chọn màu sắc của mình.</p>
                 {
                     avaiable_tones.map(tone => <ColorSection key={tone} colors={colors} tone={tone}/>)
                 }
-                <AlertDemo/>
             </>
-        </Section>
+            <AlertDemo/>
+        </>
     )
 }
 
 function ColorSection({colors, tone} : { colors: Color[],tone:Tone}) {
     if (!tone) return null;
-    const toneColors = colors.filter(color => color.tone === tone);
     return(
         <div className="my-10">
-            <h2 className="text-3xl text-center capitalize mb-10 font-light">{tone} Tone</h2>
-            <ul className="flex flex-wrap gap-x-3 gap-y-4 mb-4 justify-center">
-                {toneColors.map(color => {
+            <ul className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-y-4 gap-x-2 justify-center items-center mb-4">
+                {colors.map(color => {
                     const bgColor = color.color;
                     return (
-                        <li key={color.color} className={`w-40 h-36 flex justify-center items-center shadow-md text-gray-800`} style={{ backgroundColor: bgColor }}>
-                            { color.color }
+                        <li key={color.color} className="flex flex-col gap-2 mx-auto w-full">
+                            <div className={`w-full h-24 md:h-28 lg:h-36 flex justify-center items-center shadow-md text-gray-800`} style={{ backgroundColor: bgColor }}></div>
+                            <p className="h-5 text-xs text-ellipsis antialiased uppercase tracking-tight text-gray-600 leading-2">{ color.name }</p>
                         </li>
                     )
                 })}
@@ -63,10 +65,9 @@ function ColorSection({colors, tone} : { colors: Color[],tone:Tone}) {
 
 function AlertDemo() {
   return (
-    <Alert className="bg-yellow-100 mb-10">
-      <AlertTitle>Chú ý</AlertTitle>
+    <Alert className="bg-sky-300 mb-10 mx-auto max-w-4xl text-center">
       <AlertDescription>
-        Màu sắc có thể có chút sai lệch khi hiển thị trên các màn hình khác nhau. Để có trải nghiệm chính xác nhất vui lòng đến cửa hàng tại 
+        Màu sắc có thể khác nhau khi hiển thị trên các màn hình khác nhau. Để có trải nghiệm chính xác nhất vui lòng đến cửa hàng tại
         <a className="text-md font-bold hover:text-red-700" href="https://maps.app.goo.gl/Js9YqWYvGkoci7hm9"> 243 ĐT826C, Long Hậu, Cần Giuộc, Long An</a>
       </AlertDescription>
     </Alert>
