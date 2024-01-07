@@ -32,7 +32,7 @@ export function ProductCard({ product } : { product : Product } ) {
           </CardContent>
           <div className="px-6 pb-4 gap-2 mt-auto flex justify-between font-serif">
             <Button asChild className="w-1/2 bg-white border-none underline text-black h-16 uppercase leading-4 tracking-wider hover:bg-yellow-600 shadow-none" variant={'outline'}>
-              <Link className="flex gap-2" href={productDetailHref}>
+              <Link className="flex gap-2 text-yellow-700 font-bold" href={productDetailHref}>
                 Chi tiết
               </Link>
             </Button>
