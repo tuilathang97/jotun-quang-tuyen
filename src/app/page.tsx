@@ -117,18 +117,18 @@ function TextAndTitle2() {
                 <div className="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                   <div className="max-w-xl text-center lg:text-left">
                     <div>
-                      <p className="text-3xl font-semibold tracking-tight text-[#201515] sm:text-5xl">
+                      <p className="text-yellow-700 text-3xl font-semibold tracking-tight sm:text-5xl">
                         Lựa chọn màu sắc đẹp cùng độ chính xác cao
                       </p>
                       <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
                         Máy pha màu tự động của Jotun được thiết kế độc đáo để các nhà bán lẻ và phân phối có thể kết hợp hàng ngàn màu sắc theo ý muốn của khách hàng ngay tại cửa hàng và trung tâm phân phối. Khả năng pha màu chính xác, nhanh chóng và dễ dàng giúp máy pha màu Jotun dẫn đầu ngành công nghiệp sơn trên toàn thế giới.
                       </p>
                     </div>
-                    <div className="flex justify-center gap-3 mt-10 lg:justify-start">
+                    {/* <div className="flex justify-center gap-3 mt-10 lg:justify-start">
                       <a className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600" href="#">
                         <span> Đọc thêm &nbsp; → </span>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="flex order-first block w-full mt-0 md:mt-12 aspect-square lg:mt-0">
@@ -157,18 +157,18 @@ function TextAndTitle3() {
                 <div className="relative items-center gap-12 m-auto lg:inline-flex md:order-first">
                   <div className="max-w-xl text-center lg:text-left">
                     <div>
-                      <p className="text-3xl font-semibold tracking-tight text-[#201515] sm:text-5xl">
+                      <p className="text-3xl font-semibold tracking-tight text-yellow-700 sm:text-5xl">
                         Bảo vệ an toàn cho các công trình
                       </p>
                       <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
                         Tất nhiên, thời tiết khắc nghiệt không phải là mối đe dọa duy nhất đối với độ bền của sơn và sơn phủ Jotun. Đó là lý do tại sao chúng tôi cũng tiến hành một loạt các thử nghiệm cơ học để đánh giá độ cứng, độ bền và khả năng chống lại các mối đe dọa như va đập, mài mòn và trầy xước.
                       </p>
                     </div>
-                    <div className="flex justify-center gap-3 mt-10 lg:justify-start">
+                    {/* <div className="flex justify-center gap-3 mt-10 lg:justify-start">
                       <a className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600" href="#">
                         <span> Đọc thêm &nbsp; → </span>
                       </a>
-                    </div>  
+                    </div>   */}
                   </div>
                 </div>
               </div>
