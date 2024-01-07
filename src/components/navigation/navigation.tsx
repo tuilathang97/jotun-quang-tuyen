@@ -20,9 +20,9 @@ function Navigation() {
             <header className="h-20 px-0 md:px-6 bg-accent">
                 <div className="flex items-center justify-center md:justify-between h-20 py-2 md:py-6">
                     <div className="w-full md:w-auto flex justify-evenly md:justify-center items-center">
-                        <div className="hidden lg:block mr-6">
+                        <a className="hidden lg:block mr-6" href="/">
                           <Image src="/images/jotun.svg" width={120} height={24} alt="main logo"></Image>
-                        </div>
+                        </a>
                         <NavigationMenuDemo></NavigationMenuDemo>
                     </div>
                     <div>
