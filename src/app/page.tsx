@@ -77,28 +77,23 @@ function TextAndTitle() {
               <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
                 Cửa hàng luôn có những chương trình khuyến mãi đặc biệt và bất ngờ dành cho quý khách hàng, hãy đến cửa hàng hoặc gọi ngay vào hotline: <a className="text-red-600" href="tel:0898271703">+84898271703</a> để nhận ngay.
               </p>
-              <a className="inline-block" href="tel:0898271703">
-                <button
-                    className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-red-600 uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button"
+              <a className="inline-block flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-red-600 uppercase align-middle transition-all rounded-lg select-none hover:bg-pink-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" href="tel:0898271703">
+                Gọi ngay
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4"
                 >
-                    Gọi ngay
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    className="w-4 h-4"
-                    >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    ></path>
-                    </svg>
-                </button>
+                  <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  ></path>
+                </svg>
               </a>
           </div>
       </div>

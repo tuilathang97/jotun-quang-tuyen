@@ -31,14 +31,12 @@ export function ProductCard({ product } : { product : Product } ) {
             </div>
           </CardContent>
           <div className="px-6 pb-4 gap-2 mt-auto flex justify-between font-serif">
-            <Button asChild className="w-1/2 bg-white border-none underline text-black h-16 uppercase leading-4 tracking-wider hover:bg-yellow-600 shadow-none" variant={'outline'}>
-              <Link className="flex gap-2 text-yellow-700 font-bold" href={productDetailHref}>
-                Chi tiết
-              </Link>
-            </Button>
-            <Link href='tel:0898271703' className="h-16 flex gap-2 justify-center items-center w-1/2  rounded-md text-yellow-700 hover:text-black hover:bg-yellow-600 font-bold">
-              <span>{product.price}</span>
-            </Link>
+            <div>
+              {/* placeholder */}
+            </div>
+            <div className="h-16 flex gap-2 justify-center items-center w-1/2  rounded-md text-yellow-700 font-bold">
+              {product.price}
+            </div>
           </div>
       </Card>
     </Link>

@@ -8,7 +8,7 @@ const BestSeller = () => {
     const products = fetchArrayJson<Product>('best-seller') || [];
     return(
         <Section>
-            <Heading>
+            <Heading className="text-yellow-700">
                 Bán chạy nhất
             </Heading>
             <ProductList products={products}/>

@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "tag": "Sơn phủ hoàn thiện",
     "name": "Majestic Sang Trọng",
     "desktopImage": "majestic-sang-trong.png",
     "mobileImage": "majestic-sang-trong.png",
@@ -16,7 +17,6 @@
     "cardTitle": "Nhà sang trọng, Sống trong lành",
     "cardDescription": "Sơn nội thất siêu cao cấp Majestic Sang Trọng giúp mang đến ngôi nhà vẻ đẹp sang trọng cùng không gian sống đầy trong lành. Ứng dụng công nghệ 'Làm Sạch Không Khí' đột phá, giúp thanh lọc và gia tăng chất lượng không khí trong nhà, mang đến bạn sự thoải mái và dễ chịu. Sản phẩm Majestic Sang Trọng còn sỡ hữu bề mặt bóng, siêu láng mịn và bền màu cùng khả năng che phủ các vết nứt nhỏ, giúp cho ngôi nhà luôn giữ mãi vẻ đẹp sang trọng theo thời gian.",
     "price": "500.000",
-    "tag": "Sơn phủ hoàn thiện",
     "shortDescription": "Nhà sang trọng, Sống trong lành",
     "usq": [
       "Làm sạch không khí",
