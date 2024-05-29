@@ -46,6 +46,7 @@ function ProductDetail({ params } : { params: { id: string } }) {
             <Section className="px-0 md:mt-8 lg:mt-8 lg:pb-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 md:shadow-sm shadow-slate-400 bg-white">
                     <div className="">
+                        {/* TODO: slider here */}
                         <Image className="md:max-h-[500px]" height='300' width={'500'} style={{ width: '100%', height: 'auto'}} src={`/images/covers/${product.cardImages[0]}`} alt=''/>
                     </div>
                     <div className="px-4 pt-6">
