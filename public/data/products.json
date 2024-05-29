@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": "majestic-sang-trong",
     "tag": "Sơn phủ hoàn thiện",
     "name": "Majestic Sang Trọng",
     "desktopImage": "majestic-sang-trong.png",
@@ -34,7 +34,7 @@
     "type": "interior"
   },
   {
-    "id": 1,
+    "id": "essence-de-lau-chui",
     "name": "Essence Dễ Lau Chùi",
     "desktopImage": "essence-de-lau-chui.webp",
     "mobileImage": "essence-de-lau-chui.webp",
@@ -63,7 +63,7 @@
     "type": "interior"
   },
   {
-    "id": 2,
+    "id": "jotashield-ben-mau-toi-uu",
     "tag": "Sơn phủ hoàn thiện",
     "shortDescription": "Sơn ngoại thất tốt nhất",
     "name": "Jotashield Bền Màu Tối Ưu",
@@ -85,6 +85,129 @@
       "dryTime": "2 giờ",
       "finish": "Độ bóng trung bình",
       "coverage": "11.1m2",
+      "coats": "2"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "jotashield-chong-phai-mai",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Bảo vệ vượt trội với màu sắc bền lâu",
+    "name": "Jotashield chống phai màu (mới)",
+    "usq": [
+      "Bảo vệ vượt trội với màu sắc bền lâu",
+      "Giảm nhiệt",
+      "Ngăn ngừa vệt nước",
+      "8 năm bảo vệ"
+    ],
+    "desktopImage": "jotashield-chong-phai-mau.png",
+    "mobileImage": "jotashield-chong-phai-mau.png",
+    "description": "Jotashield Chống Phai Màu mang đến màu sắc bền vững và khả năng bảo vệ ngôi nhà vượt trội trước các điều kiện thời tiết, đồng thời giảm thiểu chi phí bảo dưỡng.",
+    "highlights": [
+      "Sơn phủ hoàn thiện",
+      "Bê tông/Khối xây gạch",
+      "Độ bóng trung bình",
+      "Tường"
+    ],
+    "cardImages": ["jotashield-chong-phai-mau-cover.webp"],
+    "cardTitle": "Bảo vệ vượt trội với màu sắc bền lâu",
+    "cardDescription": "Jotashield Chống Phai Màu được phát triển với công nghệ chất tạo màu tiên tiến, giúp chống lại sự hấp thụ và phản xạ tia tử ngoại mặt trời, ngăn ngừa phai màu và giữ cho lớp sơn bền đẹp theo thời gian. Màu sắc của sản phẩm được các chuyên gia Jotun nghiên cứu và lựa chọn kỹ lưỡng, góp phần làm đẹp cho ngôi nhà của bạn. Đồng thời, sản phẩm còn ngăn chặn vệt nước, giữ cho ngôi nhà luôn sạch như mới trong thời gian dài.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "Độ bóng trung bình",
+      "coverage": "11.4 m2",
+      "coats": "2"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "jotun-tough-shield-max",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Sự bảo vệ đáng tin cậy",
+    "name": "Jotun Tough Shield Max",
+    "usq": [
+      "Kháng tím cực tốt",
+      "Chống rong rêu và nấm mốc",
+      "Che phủ tốt"
+    ],
+    "desktopImage": "jotun-tough-shield-max.png",
+    "mobileImage": "jotun-tough-shield-max.png",
+    "description": "Với mức chi phí hợp lý và cam kết chất lượng, Tough Shield Max là lựa chọn hiệu quả và phù hợp với điều kiện kinh tế của bạn.",
+    "highlights": [
+      "Sơn phủ hoàn thiện",
+      "Bê tông/Khối xây gạch",
+      "Độ bóng thấp",
+      "Tường"
+    ],
+    "cardImages": ["jotun-tough-shield-max-cover.webp"],
+    "cardTitle": "Sự Bảo Vệ Đáng Tin Cậy",
+    "cardDescription": "Tough Shield Max cam kết mang lại màu sắc bền bỉ và khả năng chống lại thời tiết, tia cực tím, cùng bức xạ mạnh mẽ trong điều kiện thời tiết khắc nghiệt. Với Tough Shield Max, việc thi công trở nên dễ dàng hơn nhờ độ dàn trải và độ che phủ được cải thiện, giúp sơn trải đều và lớp sơn mịn màng.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "Độ bóng thấp",
+      "coverage": "10.8 m2",
+      "coats": "2"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "jotun-tough-shield",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Sự bảo vệ đáng tin cậy",
+    "name": "Jotun Tough Shield",
+    "usq": ["Bền với thời tiết", "Chống rong rêu và nấm mốc", "Chống bong tróc"],
+    "desktopImage": "jotun-tough-shield.png",
+    "mobileImage": "jotun-tough-shield.png",
+    "description": "Với mức giá hợp lý, Tough Shield là giải pháp ưu tiên cho các nhu cầu cơ bản của bạn về khả năng chống chịu thời tiết.",
+    "highlights": [
+      "Sơn phủ hoàn thiện",
+      "Bê tông/Khối xây gạch",
+      "Lớp hoàn thiện mờ",
+      "Tường"
+    ],
+    "cardImages": ["jotun-tough-shield-cover.webp"],
+    "cardTitle": "Sự Bảo Vệ Đáng Tin Cậy",
+    "cardDescription": "Tough Shield sở hữu tất cả các tính năng cơ bản mà bạn cần cho một lớp sơn ngoại thất. Với độ bền màu và khả năng bảo vệ trước các điều kiện thời tiết, sản phẩm giúp ngôi nhà của bạn luôn giữ được vẻ đẹp lâu dài.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "Lớp hoàn thiện mờ",
+      "coverage": "11.4 m2",
+      "coats": "2"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "jotun-waterguard",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Bảo vệ ngôi nhà của bạn khỏi thấm ẩm",
+    "name": "Jotun Waterguard",
+    "usq": [
+      "Chống thấm nước",
+      "Dễ thi công",
+      "Che phủ vết nứt",
+      "Chống bám bụi",
+      "Chống nấm mốc"
+    ],
+    "desktopImage": "jotun-waterguard.png",
+    "mobileImage": "jotun-waterguard.png",
+    "description": "Với công thức chống thấm tiên tiến, Jotun WaterGuard mang đến sự bảo vệ hoàn hảo cho tường nhà, ngăn chặn sự xâm nhập của nước và ngăn ngừa nấm mốc hiệu quả.",
+    "highlights": [
+      "Sơn phủ hoàn thiện",
+      "Bê tông/Khối xây gạch",
+      "Lớp hoàn thiện mờ",
+      "Tường"
+    ],
+    "cardImages": ["jotun-waterguard-cover.webp"],
+    "cardTitle": "Bảo vệ ngôi nhà của bạn khỏi thấm ẩm",
+    "cardDescription": "Tough Shield sở hữu tất cả các tính năng cơ bản mà bạn cần cho một lớp sơn ngoại thất. Với độ bền màu và khả năng bảo vệ trước các điều kiện thời tiết, sản phẩm giúp ngôi nhà của bạn luôn giữ được vẻ đẹp lâu dài.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "Lớp hoàn thiện mờ",
+      "coverage": "5.5-7.5 m2",
       "coats": "2"
     },
     "type": "exterior"
