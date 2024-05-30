@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Playfair_Display as PlayfairDisplay } from 'next/font/google'
 import './globals.css';
+import { Analytics } from "@vercel/analytics/react"
 
 const playfairDisplay = Inter({ subsets: ['vietnamese'] })
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      <Analytics />
     </html>
   )
 }
