@@ -1,6 +1,7 @@
 [
   {
-    "id": 0,
+    "id": "majestic-sang-trong",
+    "tag": "Sơn phủ hoàn thiện",
     "name": "Majestic Sang Trọng",
     "desktopImage": "majestic-sang-trong.png",
     "mobileImage": "majestic-sang-trong.png",
@@ -16,7 +17,6 @@
     "cardTitle": "Nhà sang trọng, Sống trong lành",
     "cardDescription": "Sơn nội thất siêu cao cấp Majestic Sang Trọng giúp mang đến ngôi nhà vẻ đẹp sang trọng cùng không gian sống đầy trong lành. Ứng dụng công nghệ 'Làm Sạch Không Khí' đột phá, giúp thanh lọc và gia tăng chất lượng không khí trong nhà, mang đến bạn sự thoải mái và dễ chịu. Sản phẩm Majestic Sang Trọng còn sỡ hữu bề mặt bóng, siêu láng mịn và bền màu cùng khả năng che phủ các vết nứt nhỏ, giúp cho ngôi nhà luôn giữ mãi vẻ đẹp sang trọng theo thời gian.",
     "price": "500.000",
-    "tag": "Sơn phủ hoàn thiện",
     "shortDescription": "Nhà sang trọng, Sống trong lành",
     "usq": [
       "Làm sạch không khí",
@@ -34,36 +34,67 @@
     "type": "interior"
   },
   {
-    "id": 1,
-    "name": "Essence Dễ Lau Chùi",
-    "desktopImage": "essence-de-lau-chui.webp",
-    "mobileImage": "essence-de-lau-chui.webp",
-    "highlights": ["Sơn phủ", "Bê tông", "Thạch cao", "Masonry surfaces", "Mờ"],
-    "description": "Duy trì màu sắc rực rỡ của tường nhà bạn với Essence Dễ Lau Chùi. Với tính năng dễ lau chùi tuyệt vời, sản phẩm là lựa chọn phù hợp giúp làm sạch những vết ố bẩn trên bề mặt tường, đảm bảo màng sơn luôn đẹp như mới.",
-    "linkUrl": "http://pbs.org/vestibulum/ac/est/lacinia.aspx?vehicula=ultrices&consequat=posuere&morbi=cubilia&a=curae&ipsum=donec&integer=pharetra&a=magna&nibh=vestibulum&in=aliquet&quis=ultrices&justo=erat&maecenas=tortor&rhoncus=sollicitudin&aliquam=mi&lacus=sit&morbi=amet&quis=lobortis&tortor=sapien&id=sapien&nulla=non&ultrices=mi&aliquet=integer&maecenas=ac&leo=neque&odio=duis&condimentum=bibendum&id=morbi&luctus=non&nec=quam&molestie=nec&sed=dui&justo=luctus&pellentesque=rutrum&viverra=nulla&pede=tellus&ac=in&diam=sagittis&cras=dui&pellentesque=vel&volutpat=nisl&dui=duis&maecenas=ac&tristique=nibh&est=fusce&et=lacus&tempus=purus&semper=aliquet&est=at&quam=feugiat&pharetra=non&magna=pretium&ac=quis&consequat=lectus",
-    "cardImages": ["essence-de-lau-chui.webp"],
-    "cardTitle": "Màu sơn được tối ưu hoá giúp dễ lau chùi và luôn đảm bảo cho vẻ đẹp của ngôi nhà",
-    "cardDescription": "Được tạo thành bởi một loại nhũ tương acrylic đặc biệt, dành cho nội thất. Với đặc tính tẩy rửa tốt, Essence Dễ Lau Chùi đảm bảo có thể lau sạch các vết bẩn cứng đầu khỏi tường một cách dễ dàng và giữ cho tường nhà bạn vẻ đẹp lâu dài.",
-    "price": "500.000",
-    "tag": "Sơn phủ",
-    "shortDescription": "Màu sơn được tối ưu hoá giúp dễ lau chùi và luôn đảm bảo cho vẻ đẹp của ngôi nhà",
+    "id": "majestic-dep-hoan-hao-mo",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Giúp mặt tường luôn đẹp và bền màu",
+    "name": "Jotun Majestic Đẹp Hoàn Hảo Mờ",
     "usq": [
+      "Công nghệ Màu Đích Thực",
+      "Bề mặt nhẵn mịn",
       "Dễ lau chùi",
       "Nhẹ mùi",
-      "Hàm lượng VOC thấp",
-      "Dễ thi công",
-      "Độ che phủ cao"
+      "Kháng khuẩn và chống nấm mốc"
     ],
+    "desktopImage": "majestic-dep-hoan-hao-mo.png",
+    "mobileImage": "majestic-dep-hoan-hao-mo.png",
+    "description": "Majestic Đẹp Hoàn Hảo (Mờ) mang lại màu sắc đẹp và sống động, nâng cao sự sang trọng cho không gian nội thất, đồng thời đảm bảo độ bền cao.",
+    "highlights": [
+      "Sơn phủ hoàn thiện",
+      "Bê tông/Khối xây gạch",
+      "Lớp hoàn thiện mờ",
+      "Tường"
+    ],
+    "cardImages": ["majestic-dep-hoan-hao-cover.webp"],
+    "cardTitle": "Giúp mặt tường luôn đẹp và bền màu",
+    "cardDescription": "Vẻ đẹp hoàn thiện của Majestic Đẹp Hoàn Hảo biến ngôi nhà của bạn thành một không gian sống đáng mơ ước. Với màu sắc rực rỡ và khả năng bền màu theo thời gian, ngôi nhà của bạn sẽ trở thành niềm ao ước của nhiều người.",
+    "price": "500.000",
     "stat": {
       "dryTime": "2 giờ",
-      "finish": "Mờ",
-      "coverage": "10.8m2",
+      "finish": "Lớp hoàn thiện mờ",
+      "coverage": "10.5 m2",
       "coats": "2"
     },
     "type": "interior"
   },
   {
-    "id": 2,
+    "id": "majestic-dep-hoan-hao-bong",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Giúp mặt tường luôn đẹp và bền màu",
+    "name": "Jotun Majestic Đẹp Hoàn Hảo Bóng",
+    "usq": [
+      "Công nghệ Màu Đích Thực",
+      "Bề mặt nhẵn mịn",
+      "Dễ lau chùi",
+      "Nhẹ mùi",
+      "Kháng khuẩn và chống nấm mốc"
+    ],
+    "desktopImage": "majestic-dep-hoan-hao-bong.png",
+    "mobileImage": "majestic-dep-hoan-hao-bong.png",
+    "description": "Majestic Đẹp Hoàn Hảo (Bóng) mang lại màu sắc đẹp và sống động, nâng cao sự sang trọng cho không gian nội thất, đồng thời đảm bảo độ bền cao.",
+    "highlights": ["Sơn phủ hoàn thiện", "Bê tông/Khối xây gạch", "Tường"],
+    "cardImages": ["majestic-dep-hoan-hao-cover.webp"],
+    "cardTitle": "Giúp mặt tường luôn đẹp và bền màu",
+    "cardDescription": "Vẻ đẹp hoàn thiện của Majestic Đẹp Hoàn Hảo (Bóng) biến ngôi nhà của bạn thành một không gian sống đáng mơ ước. Với màu sắc rực rỡ và khả năng bền màu theo thời gian, ngôi nhà của bạn sẽ trở thành niềm ao ước của nhiều người.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "coverage": "10.5 m2",
+      "coats": "2"
+    },
+    "type": "interior"
+  },
+  {
+    "id": "jotashield-ben-mau-toi-uu",
     "tag": "Sơn phủ hoàn thiện",
     "shortDescription": "Sơn ngoại thất tốt nhất",
     "name": "Jotashield Bền Màu Tối Ưu",
@@ -90,6 +121,38 @@
       "dryTime": "2 giờ",
       "finish": "Độ bóng trung bình",
       "coverage": "11.1m2",
+      "coats": "2"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "jotashield-chong-phai-mau",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Bảo vệ vượt trội với màu sắc bền lâu",
+    "name": "Jotashield chống phai màu (mới)",
+    "usq": [
+      "Bảo vệ vượt trội với màu sắc bền lâu",
+      "Giảm nhiệt",
+      "Ngăn ngừa vệt nước",
+      "8 năm bảo vệ"
+    ],
+    "desktopImage": "jotashield-chong-phai-mau.png",
+    "mobileImage": "jotashield-chong-phai-mau.png",
+    "description": "Jotashield Chống Phai Màu mang đến màu sắc bền vững và khả năng bảo vệ ngôi nhà vượt trội trước các điều kiện thời tiết, đồng thời giảm thiểu chi phí bảo dưỡng.",
+    "highlights": [
+      "Sơn phủ hoàn thiện",
+      "Bê tông/Khối xây gạch",
+      "Độ bóng trung bình",
+      "Tường"
+    ],
+    "cardImages": ["jotashield-chong-phai-mau-cover.webp"],
+    "cardTitle": "Bảo vệ vượt trội với màu sắc bền lâu",
+    "cardDescription": "Jotashield Chống Phai Màu được phát triển với công nghệ chất tạo màu tiên tiến, giúp chống lại sự hấp thụ và phản xạ tia tử ngoại mặt trời, ngăn ngừa phai màu và giữ cho lớp sơn bền đẹp theo thời gian. Màu sắc của sản phẩm được các chuyên gia Jotun nghiên cứu và lựa chọn kỹ lưỡng, góp phần làm đẹp cho ngôi nhà của bạn. Đồng thời, sản phẩm còn ngăn chặn vệt nước, giữ cho ngôi nhà luôn sạch như mới trong thời gian dài.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "Độ bóng trung bình",
+      "coverage": "11.4 m2",
       "coats": "2"
     },
     "type": "exterior"

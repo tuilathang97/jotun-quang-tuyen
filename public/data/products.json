@@ -90,7 +90,7 @@
     "type": "exterior"
   },
   {
-    "id": "jotashield-chong-phai-mai",
+    "id": "jotashield-chong-phai-mau",
     "tag": "Sơn phủ hoàn thiện",
     "shortDescription": "Bảo vệ vượt trội với màu sắc bền lâu",
     "name": "Jotashield chống phai màu (mới)",
@@ -209,6 +209,210 @@
       "finish": "Lớp hoàn thiện mờ",
       "coverage": "5.5-7.5 m2",
       "coats": "2"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "majestic-dep-hoan-hao-mo",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Giúp mặt tường luôn đẹp và bền màu",
+    "name": "Jotun Majestic Đẹp Hoàn Hảo Mờ",
+    "usq": [
+      "Công nghệ Màu Đích Thực",
+      "Bề mặt nhẵn mịn",
+      "Dễ lau chùi",
+      "Nhẹ mùi",
+      "Kháng khuẩn và chống nấm mốc"
+    ],
+    "desktopImage": "majestic-dep-hoan-hao-mo.png",
+    "mobileImage": "majestic-dep-hoan-hao-mo.png",
+    "description": "Majestic Đẹp Hoàn Hảo (Mờ) mang lại màu sắc đẹp và sống động, nâng cao sự sang trọng cho không gian nội thất, đồng thời đảm bảo độ bền cao.",
+    "highlights": [
+      "Sơn phủ hoàn thiện",
+      "Bê tông/Khối xây gạch",
+      "Lớp hoàn thiện mờ",
+      "Tường"
+    ],
+    "cardImages": ["majestic-dep-hoan-hao-cover.webp"],
+    "cardTitle": "Giúp mặt tường luôn đẹp và bền màu",
+    "cardDescription": "Vẻ đẹp hoàn thiện của Majestic Đẹp Hoàn Hảo biến ngôi nhà của bạn thành một không gian sống đáng mơ ước. Với màu sắc rực rỡ và khả năng bền màu theo thời gian, ngôi nhà của bạn sẽ trở thành niềm ao ước của nhiều người.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "Lớp hoàn thiện mờ",
+      "coverage": "10.5 m2",
+      "coats": "2"
+    },
+    "type": "interior"
+  },
+  {
+    "id": "majestic-dep-hoan-hao-bong",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Giúp mặt tường luôn đẹp và bền màu",
+    "name": "Jotun Majestic Đẹp Hoàn Hảo Bóng",
+    "usq": [
+      "Công nghệ Màu Đích Thực",
+      "Bề mặt nhẵn mịn",
+      "Dễ lau chùi",
+      "Nhẹ mùi",
+      "Kháng khuẩn và chống nấm mốc"
+    ],
+    "desktopImage": "majestic-dep-hoan-hao-bong.png",
+    "mobileImage": "majestic-dep-hoan-hao-bong.png",
+    "description": "Majestic Đẹp Hoàn Hảo (Bóng) mang lại màu sắc đẹp và sống động, nâng cao sự sang trọng cho không gian nội thất, đồng thời đảm bảo độ bền cao.",
+    "highlights": [
+      "Sơn phủ hoàn thiện",
+      "Bê tông/Khối xây gạch",
+      "Tường"
+    ],
+    "cardImages": ["majestic-dep-hoan-hao-cover.webp"],
+    "cardTitle": "Giúp mặt tường luôn đẹp và bền màu",
+    "cardDescription": "Vẻ đẹp hoàn thiện của Majestic Đẹp Hoàn Hảo (Bóng) biến ngôi nhà của bạn thành một không gian sống đáng mơ ước. Với màu sắc rực rỡ và khả năng bền màu theo thời gian, ngôi nhà của bạn sẽ trở thành niềm ao ước của nhiều người.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "coverage": "10.5 m2",
+      "coats": "2"
+    },
+    "type": "interior"
+  },
+  {
+    "id": "jotaplast",
+    "tag": "Sơn phủ hoàn thiện",
+    "shortDescription": "Giá cả phải chăng đáp ứng nhu cầu cơ bản",
+    "name": "Jotaplast",
+    "usq": [
+      "Dễ thi công",
+      "Chống nấm mốc",
+      "Che phủ vết nứt bề mặt"
+    ],
+    "desktopImage": "jotaplast.png",
+    "mobileImage": "jotaplast.png",
+    "description": "Với mức chi phí hợp lý và cam kết về chất lượng, Jotaplast là lựa chọn hiệu quả và phù hợp với điều kiện kinh tế của bạn.",
+    "highlights": ["Sơn phủ hoàn thiện", "Bê tông/Khối xây gạch", "Lớp hoàn thiện mờ", "Tường"],
+    "cardImages": ["jotaplast-cover.webp"],
+    "cardTitle": "Giá cả phải chăng đáp ứng nhu cầu cơ bản",
+    "cardDescription": "Với công thức đặc biệt, Jotaplast giúp che đi các khuyết điểm trên bề mặt và cung cấp độ phủ cao cho tường nội thất nhà bạn.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "0 giờ",
+      "finish": "Lớp hoàn thiện mờ",
+      "coats": "2"
+    },
+    "type": "interior"
+  },
+  {
+    "id": "son-lot-majestic-primer",
+    "tag": "Sơn Lót",
+    "shortDescription": "Giúp màu sắc rực rỡ và tăng cường độ bền màu",
+    "name": "Sơn Lót Majestic Primer",
+    "usq": ["Tăng cường độ bền màu", "Giúp ngôi nhà có được vẻ đẹp bền lâu", "Nhẹ mùi", "Chống kiềm"],
+    "desktopImage": "majestic-primer.png",
+    "mobileImage": "majestic-primer.png",
+    "description": "Sơn lót chống kiềm gốc nước cao cấp được thiết kế đặc biệt để sử dụng cho các loại sơn nội thất cao cấp.",
+    "highlights": ["Sơn lót", "Bê tông/ Khối xây gạch", "Tường"],
+    "cardImages": ["majestic-primer-cover.webp"],
+    "cardTitle": "Giúp màu sắc rực rỡ và tăng cường độ bền màu",
+    "cardDescription": "Majestic Primer là loại sơn lót cao cấp giúp màng sơn rực rỡ hơn và tăng cường độ bền màu lẫn tuổi thọ của các dòng sơn Majestic. Giúp ngôi nhà có được vẻ đẹp bền lâu.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "9.35 m2",
+      "coats": "2"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "gardex-premium-gloss",
+    "tag": "Sơn",
+    "shortDescription": "Sơn cho gỗ và kim loại, độ bền cao nhẹ mùi",
+    "name": "Gardex Premium Gloss",
+    "usq": ["Nhẹ mùi", "Nhanh khô", "Bền màu", "Chống rong rêu và nấm mốc", "Chống gỉ"],
+    "desktopImage": "gradex-premium-gloss.png",
+    "mobileImage": "gradex-premium-gloss.png",
+    "description": "Sơn bóng cao cấp nhẹ mùi dành cho bề mặt gỗ và kim loại. Loại sơn này có độ bền vượt trội và khả năng giữ màu cực tốt.",
+    "highlights": [
+      "Sơn",
+      "Gỗ",
+      "Kim loại",
+      "Cửa",
+      "Bệ cột"
+    ],
+    "cardImages": ["gradex-premium-gloss-cover.webp"],
+    "cardTitle": "Sơn cho gỗ và kim loại, độ bền cao nhẹ mùi",
+    "cardDescription": "Gardex Bóng Mờ là loại sơn phủ cao cấp dành cho bề mặt gỗ và kim loại, sử dụng tuyệt vời cho cả nội thất và ngoại thất. Gardex Bóng Mờ là sơn dầu cao cấp, thích hợp cho cả nội thất và ngoại thất, hầu như không có mùi trong và sau khi thi công, mang lại trải nghiệm dễ chịu. Sản phẩm có thời gian khô tối ưu và ứng dụng công nghệ Màu Đích Thực của Jotun, mang lại màu sắc nổi bật và bền vững theo thời gian.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "12 giờ",
+      "finish": "12 - 16 m2",
+      "coats": "2"
+    },
+    "type": "interior"
+  },
+  {
+    "id": "son-lot-jotashield-primer",
+    "tag": "Sơn Lót",
+    "shortDescription": "Sơn lót cao cấp cho ngoại thất ngôi nhà",
+    "name": "Sơn Lót Jotashield Primer",
+    "usq": [
+      "Kháng mùi",
+      "Độ bám dính tuyệt hảo",
+      "Chống thấm"
+    ],
+    "desktopImage": "gradex-premium-gloss.png",
+    "mobileImage": "gradex-premium-gloss.png",
+    "description": "Sơn lót Jotashield là loại sơn lót acrylic gốc nước cao cấp, được sử dụng làm lớp nền cho sơn ngoại thất Jotashield nhằm đạt hiệu quả tối ưu.",
+    "highlights": ["Sơn lót", "Bê tông/ Khối xây gạch", "Thạch cao", "Tường"],
+    "cardImages": ["jotaplast-cover.webp"],
+    "cardTitle": "Sơn lót cao cấp cho ngoại thất ngôi nhà",
+    "cardDescription": "Sơn lót Jotashield là loại sơn lót thân thiện với môi trường, giúp chống lại sự tấn công của kiềm và độ ẩm. Đồng thời, sản phẩm cung cấp độ bám dính tuyệt vời cho lớp sơn phủ, đảm bảo hiệu quả bảo vệ và thẩm mỹ cho bề mặt.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "9.35 m2",
+      "coats": "1"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "son-lot-jotashield-primer",
+    "tag": "Sơn Lót",
+    "shortDescription": "Sơn lót cao cấp cho ngoại thất ngôi nhà",
+    "name": "Sơn Lót Jotashield Primer",
+    "usq": ["Kháng mùi", "Độ bám dính tuyệt hảo", "Chống thấm"],
+    "desktopImage": "gradex-premium-gloss.png",
+    "mobileImage": "gradex-premium-gloss.png",
+    "description": "Sơn lót Jotashield là loại sơn lót acrylic gốc nước cao cấp, được sử dụng làm lớp nền cho sơn ngoại thất Jotashield nhằm đạt hiệu quả tối ưu.",
+    "highlights": ["Sơn lót", "Bê tông/ Khối xây gạch", "Thạch cao", "Tường"],
+    "cardImages": ["jotaplast-cover.webp"],
+    "cardTitle": "Sơn lót cao cấp cho ngoại thất ngôi nhà",
+    "cardDescription": "Sơn lót Jotashield là loại sơn lót thân thiện với môi trường, giúp chống lại sự tấn công của kiềm và độ ẩm. Đồng thời, sản phẩm cung cấp độ bám dính tuyệt vời cho lớp sơn phủ, đảm bảo hiệu quả bảo vệ và thẩm mỹ cho bề mặt.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "9.35 m2",
+      "coats": "1"
+    },
+    "type": "exterior"
+  },
+  {
+    "id": "son-lot-toughshield-primer",
+    "tag": "Sơn Lót",
+    "shortDescription": "Sự bảo vệ đáng tin cậy",
+    "name": "Sơn Lót Jotashield Primer",
+    "usq": ["Độ bám dính cao", "Chống kiềm hóa"],
+    "desktopImage": "tough-shield-primer.png",
+    "mobileImage": "tough-shield-primer.png",
+    "description": "Sơn lót Tough Shield Primer rất dễ thi công, giúp cải thiện bề mặt hoàn thiện và tăng cường độ bền của lớp sơn phủ.",
+    "highlights": ["Sơn lót", "Bê tông/ Khối xây gạch", "Tường"],
+    "cardImages": ["tough-shield-cover.webp"],
+    "cardTitle": "Sự Bảo Vệ Đáng Tin Cậy",
+    "cardDescription": "Sơn lót Tough Shield cung cấp độ bám dính tốt giữa bề mặt tường và lớp sơn phủ, tạo ra một lớp nền hoàn hảo giúp cải thiện bề mặt và tăng độ bền của lớp sơn phủ bên ngoài. Sản phẩm giúp chống lại sự tấn công của kiềm hóa, tác nhân chính gây hiện tượng bạc màu, giúp tường nhà luôn giữ được màu sắc bền lâu.",
+    "price": "500.000",
+    "stat": {
+      "dryTime": "2 giờ",
+      "finish": "10.2 m2",
+      "coats": "1"
     },
     "type": "exterior"
   }
