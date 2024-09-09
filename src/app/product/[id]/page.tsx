@@ -39,7 +39,7 @@ function ProductDetail({ params } : { params: { id: string } }) {
                     <div className="md:py-10">
                         <h1 className="my-6 lg:my-0 lg:mb-4 font-semibold text-2xl leading-8">{product.name}</h1>
                         <p className="leading-6">{product.description}</p>
-                        <p className="mt-6 font-bold text-orange-800">{product.price} vnđ</p>
+                        <p className="mt-6 font-bold text-orange-800">{product.price}</p>
                     </div>
                 </div>
             </Section>
