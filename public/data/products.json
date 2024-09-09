@@ -44,7 +44,7 @@
     "cardImages": ["essence-de-lau-chui.webp"],
     "cardTitle": "Màu sơn được tối ưu hoá giúp dễ lau chùi và luôn đảm bảo cho vẻ đẹp của ngôi nhà",
     "cardDescription": "Được tạo thành bởi một loại nhũ tương acrylic đặc biệt, dành cho nội thất. Với đặc tính tẩy rửa tốt, Essence Dễ Lau Chùi đảm bảo có thể lau sạch các vết bẩn cứng đầu khỏi tường một cách dễ dàng và giữ cho tường nhà bạn vẻ đẹp lâu dài.",
-    "price": "500.000",
+    "price": "145.000 vnđ / 1L",
     "tag": "Sơn phủ",
     "shortDescription": "Màu sơn được tối ưu hoá giúp dễ lau chùi và luôn đảm bảo cho vẻ đẹp của ngôi nhà",
     "usq": [
@@ -80,7 +80,7 @@
     "cardImages": ["jotashield-ben-mau-toi-uu-cover.webp"],
     "cardTitle": "Sơn ngoại thất tốt nhất",
     "cardDescription": "Jotashield Bền Màu Tối Ưu mang đến cho ngôi nhà của bạn sự bảo vệ tốt nhất trước thời tiết nhiệt đới khắc nghiệt. Sơn đã qua kiểm nghiệm và được chứng minh đầy đủ bởi các cơ sở kiểm nghiệm độc lập là loại sơn ngoại thất tốt nhất hiện nay. Công nghệ Chất tạo màu Tiên tiến của Jotun đảm bảo màu sắc bền đẹp, chống lại tia UV Việc sử dụng công nghệ diệt khuẩn ở mức độ tối ưu giúp ngăn chặn sự hình thành của tảo và nấm mốc, giữ cho ngôi nhà của bạn luôn được bảo vệ.",
-    "price": "500.000",
+    "price": "310.000 vnđ / 1L",
     "stat": {
       "dryTime": "2 giờ",
       "finish": "Độ bóng trung bình",
@@ -143,7 +143,7 @@
     "cardImages": ["jotun-tough-shield-max-cover.webp"],
     "cardTitle": "Sự Bảo Vệ Đáng Tin Cậy",
     "cardDescription": "Tough Shield Max cam kết mang lại màu sắc bền bỉ và khả năng chống lại thời tiết, tia cực tím, cùng bức xạ mạnh mẽ trong điều kiện thời tiết khắc nghiệt. Với Tough Shield Max, việc thi công trở nên dễ dàng hơn nhờ độ dàn trải và độ che phủ được cải thiện, giúp sơn trải đều và lớp sơn mịn màng.",
-    "price": "500.000",
+    "price": "780.000 vnđ / 5L",
     "stat": {
       "dryTime": "2 giờ",
       "finish": "Độ bóng thấp",
@@ -170,7 +170,7 @@
     "cardImages": ["jotun-tough-shield-cover.webp"],
     "cardTitle": "Sự Bảo Vệ Đáng Tin Cậy",
     "cardDescription": "Tough Shield sở hữu tất cả các tính năng cơ bản mà bạn cần cho một lớp sơn ngoại thất. Với độ bền màu và khả năng bảo vệ trước các điều kiện thời tiết, sản phẩm giúp ngôi nhà của bạn luôn giữ được vẻ đẹp lâu dài.",
-    "price": "500.000",
+    "price": "460.000 vnđ / 5L",
     "stat": {
       "dryTime": "2 giờ",
       "finish": "Lớp hoàn thiện mờ",
@@ -203,7 +203,7 @@
     "cardImages": ["jotun-waterguard-cover.webp"],
     "cardTitle": "Bảo vệ ngôi nhà của bạn khỏi thấm ẩm",
     "cardDescription": "Tough Shield sở hữu tất cả các tính năng cơ bản mà bạn cần cho một lớp sơn ngoại thất. Với độ bền màu và khả năng bảo vệ trước các điều kiện thời tiết, sản phẩm giúp ngôi nhà của bạn luôn giữ được vẻ đẹp lâu dài.",
-    "price": "500.000",
+    "price": "700.000 vnđ / 6L",
     "stat": {
       "dryTime": "2 giờ",
       "finish": "Lớp hoàn thiện mờ",
@@ -236,7 +236,7 @@
     "cardImages": ["majestic-dep-hoan-hao-mo-cover.webp"],
     "cardTitle": "Giúp mặt tường luôn đẹp và bền màu",
     "cardDescription": "Vẻ đẹp hoàn thiện của Majestic Đẹp Hoàn Hảo biến ngôi nhà của bạn thành một không gian sống đáng mơ ước. Với màu sắc rực rỡ và khả năng bền màu theo thời gian, ngôi nhà của bạn sẽ trở thành niềm ao ước của nhiều người.",
-    "price": "500.000",
+    "price": "195.000 vnđ / 1L",
     "stat": {
       "dryTime": "2 giờ",
       "finish": "Lớp hoàn thiện mờ",
@@ -268,7 +268,7 @@
     "cardImages": ["majestic-dep-hoan-hao-mo-cover.webp"],
     "cardTitle": "Giúp mặt tường luôn đẹp và bền màu",
     "cardDescription": "Vẻ đẹp hoàn thiện của Majestic Đẹp Hoàn Hảo (Bóng) biến ngôi nhà của bạn thành một không gian sống đáng mơ ước. Với màu sắc rực rỡ và khả năng bền màu theo thời gian, ngôi nhà của bạn sẽ trở thành niềm ao ước của nhiều người.",
-    "price": "500.000",
+    "price": "195.000 vnđ / 1L",
     "stat": {
       "dryTime": "2 giờ",
       "coverage": "10.5 m2",
@@ -293,7 +293,7 @@
     "cardImages": ["jotaplast-cover.webp"],
     "cardTitle": "Giá cả phải chăng đáp ứng nhu cầu cơ bản",
     "cardDescription": "Với công thức đặc biệt, Jotaplast giúp che đi các khuyết điểm trên bề mặt và cung cấp độ phủ cao cho tường nội thất nhà bạn.",
-    "price": "500.000",
+    "price": "295.000 vnđ / 5L",
     "stat": {
       "dryTime": "0 giờ",
       "finish": "Lớp hoàn thiện mờ",
@@ -314,7 +314,7 @@
     "cardImages": ["majestic-primer-cover.webp"],
     "cardTitle": "Giúp màu sắc rực rỡ và tăng cường độ bền màu",
     "cardDescription": "Majestic Primer là loại sơn lót cao cấp giúp màng sơn rực rỡ hơn và tăng cường độ bền màu lẫn tuổi thọ của các dòng sơn Majestic. Giúp ngôi nhà có được vẻ đẹp bền lâu.",
-    "price": "500.000",
+    "price": "520.000 vnđ / 5L",
     "stat": {
       "dryTime": "2 giờ",
       "finish": "9.35 m2",
@@ -341,7 +341,7 @@
     "cardImages": ["gradex-premium-gloss-cover.webp"],
     "cardTitle": "Sơn cho gỗ và kim loại, độ bền cao nhẹ mùi",
     "cardDescription": "Gardex Bóng Mờ là loại sơn phủ cao cấp dành cho bề mặt gỗ và kim loại, sử dụng tuyệt vời cho cả nội thất và ngoại thất. Gardex Bóng Mờ là sơn dầu cao cấp, thích hợp cho cả nội thất và ngoại thất, hầu như không có mùi trong và sau khi thi công, mang lại trải nghiệm dễ chịu. Sản phẩm có thời gian khô tối ưu và ứng dụng công nghệ Màu Đích Thực của Jotun, mang lại màu sắc nổi bật và bền vững theo thời gian.",
-    "price": "500.000",
+    "price": "140.000 vnđ / 0.8L",
     "stat": {
       "dryTime": "12 giờ",
       "finish": "12 - 16 m2",
@@ -366,28 +366,7 @@
     "cardImages": ["jotaplast-cover.webp"],
     "cardTitle": "Sơn lót cao cấp cho ngoại thất ngôi nhà",
     "cardDescription": "Sơn lót Jotashield là loại sơn lót thân thiện với môi trường, giúp chống lại sự tấn công của kiềm và độ ẩm. Đồng thời, sản phẩm cung cấp độ bám dính tuyệt vời cho lớp sơn phủ, đảm bảo hiệu quả bảo vệ và thẩm mỹ cho bề mặt.",
-    "price": "500.000",
-    "stat": {
-      "dryTime": "2 giờ",
-      "finish": "9.35 m2",
-      "coats": "1"
-    },
-    "type": "exterior"
-  },
-  {
-    "id": "son-lot-jotashield-primer",
-    "tag": "Sơn Lót",
-    "shortDescription": "Sơn lót cao cấp cho ngoại thất ngôi nhà",
-    "name": "Sơn Lót Jotashield Primer",
-    "usq": ["Kháng mùi", "Độ bám dính tuyệt hảo", "Chống thấm"],
-    "desktopImage": "gradex-premium-gloss.png",
-    "mobileImage": "gradex-premium-gloss.png",
-    "description": "Sơn lót Jotashield là loại sơn lót acrylic gốc nước cao cấp, được sử dụng làm lớp nền cho sơn ngoại thất Jotashield nhằm đạt hiệu quả tối ưu.",
-    "highlights": ["Sơn lót", "Bê tông/ Khối xây gạch", "Thạch cao", "Tường"],
-    "cardImages": ["jotaplast-cover.webp"],
-    "cardTitle": "Sơn lót cao cấp cho ngoại thất ngôi nhà",
-    "cardDescription": "Sơn lót Jotashield là loại sơn lót thân thiện với môi trường, giúp chống lại sự tấn công của kiềm và độ ẩm. Đồng thời, sản phẩm cung cấp độ bám dính tuyệt vời cho lớp sơn phủ, đảm bảo hiệu quả bảo vệ và thẩm mỹ cho bề mặt.",
-    "price": "500.000",
+    "price": "690.000 vnđ / 5L",
     "stat": {
       "dryTime": "2 giờ",
       "finish": "9.35 m2",
@@ -408,7 +387,7 @@
     "cardImages": ["tough-shield-cover.webp"],
     "cardTitle": "Sự Bảo Vệ Đáng Tin Cậy",
     "cardDescription": "Sơn lót Tough Shield cung cấp độ bám dính tốt giữa bề mặt tường và lớp sơn phủ, tạo ra một lớp nền hoàn hảo giúp cải thiện bề mặt và tăng độ bền của lớp sơn phủ bên ngoài. Sản phẩm giúp chống lại sự tấn công của kiềm hóa, tác nhân chính gây hiện tượng bạc màu, giúp tường nhà luôn giữ được màu sắc bền lâu.",
-    "price": "500.000",
+    "price": "520.000 vnđ / 5L",
     "stat": {
       "dryTime": "2 giờ",
       "finish": "10.2 m2",
