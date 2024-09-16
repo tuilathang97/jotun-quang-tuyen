@@ -1,6 +1,6 @@
 'use client'
 
-import { Product, Price } from "@/app/product/[id]/page";
+import { Product, PriceProps } from "@/app/product/[id]/page";
 import React from "react";
 import { Button } from "../ui/button";
 
@@ -8,7 +8,7 @@ const Price = ({ product } : { product: Product }) => {
     const [unit, setUnit] = React.useState(product?.price[0]?.unit); // TODO: Thang
     const [price, setPrice] = React.useState(product?.price[0]?.price); // TODO: Thang
     const [originalPrice, setOrignalPrice] = React.useState(product?.price[0]?.orginalPrice); // TODO: Thang
-    const onPriceChange = (p: Price) => {
+    const onPriceChange = (p: PriceProps) => {
         return (e: any) => {
             e.preventDefault();
             e.stopPropagation();

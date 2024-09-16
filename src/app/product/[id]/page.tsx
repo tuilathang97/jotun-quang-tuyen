@@ -14,7 +14,7 @@ export interface Product {
   cardImages: string[];
   cardTitle: string;
   cardDescription: string;
-  price: Price[];
+  price: PriceProps[];
   usq: string[];
   stat: {
     dryTime: string,
@@ -27,7 +27,7 @@ export interface Product {
   tag: string
 }
 
-export interface Price {
+export interface PriceProps {
     orginalPrice: string,
     price: string,
     unit: string
