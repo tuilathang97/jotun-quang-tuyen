@@ -100,11 +100,7 @@ function TextAndTitle3() {
               <p className="mt-6 text-lg leading-8 text-black">
                 Tất nhiên, thời tiết khắc nghiệt không phải là mối đe dọa duy nhất đối với độ bền của sơn và sơn phủ Jotun. Đó là lý do tại sao chúng tôi cũng tiến hành một loạt các thử nghiệm cơ học để đánh giá độ cứng, độ bền và khả năng chống lại các mối đe dọa như va đập, mài mòn và trầy xước.
               </p>
-              <div className="mt-6 flex">
-                <a href="#best-seller" className="text-sm font-semibold leading-6 text-red-600">
-                  Mua ngay <span aria-hidden="true">&rarr;</span>
-                </a>
-              </div>
+              <div className="mt-6 flex"></div>
             </div>
           </div>
         </div>
