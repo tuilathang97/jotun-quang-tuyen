@@ -1,3 +1,4 @@
+import Price from "@/components/product/price";
 import Section from "@/components/section";
 import { fetchArrayJson, getProduct } from "@/utils/utils";
 import Image from "next/image";
@@ -13,7 +14,7 @@ export interface Product {
   cardImages: string[];
   cardTitle: string;
   cardDescription: string;
-  price: string;
+  price: Price[];
   usq: string[];
   stat: {
     dryTime: string,
@@ -24,6 +25,12 @@ export interface Product {
   type: "interior" | 'exterior',
   shortDescription: string,
   tag: string
+}
+
+export interface Price {
+    orginalPrice: string,
+    price: string,
+    unit: string
 }
 
 function ProductDetail({ params } : { params: { id: string } }) {
@@ -38,8 +45,8 @@ function ProductDetail({ params } : { params: { id: string } }) {
                     <Image height={180} width={140} src={`/images/products/${product.desktopImage}`} alt={""} />
                     <div className="md:py-10">
                         <h1 className="my-6 lg:my-0 lg:mb-4 font-semibold text-2xl leading-8">{product.name}</h1>
-                        <p className="leading-6">{product.description}</p>
-                        <p className="mt-6 font-bold text-orange-800">{product.price}</p>
+                        <p className="leading-6 mb-4">{product.description}</p>
+                        <Price product={product}/>
                     </div>
                 </div>
             </Section>

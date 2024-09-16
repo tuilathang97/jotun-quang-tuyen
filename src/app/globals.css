@@ -84,3 +84,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.badge {
+  font-family: oswald, sans-serif;
+  font-size: 32px;
+  transform: rotate(45deg);
+  margin: 50px auto;
+  background: #6c2d66;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 8px;
+  color: #FFFFFF;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.badge span {
+  display: block;
+  transform: rotate(-45deg);
+  opacity: .9;
+}

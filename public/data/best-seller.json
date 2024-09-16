@@ -16,7 +16,23 @@
     "cardImages": ["majestic-sang-trong-cover.webp"],
     "cardTitle": "Nhà sang trọng, Sống trong lành",
     "cardDescription": "Sơn nội thất siêu cao cấp Majestic Sang Trọng giúp mang đến ngôi nhà vẻ đẹp sang trọng cùng không gian sống đầy trong lành. Ứng dụng công nghệ 'Làm Sạch Không Khí' đột phá, giúp thanh lọc và gia tăng chất lượng không khí trong nhà, mang đến bạn sự thoải mái và dễ chịu. Sản phẩm Majestic Sang Trọng còn sỡ hữu bề mặt bóng, siêu láng mịn và bền màu cùng khả năng che phủ các vết nứt nhỏ, giúp cho ngôi nhà luôn giữ mãi vẻ đẹp sang trọng theo thời gian.",
-    "price": "215.000 vnđ / 1L",
+    "price": [
+      {
+          "unit": "1L",
+          "orginalPrice": "475.000",
+          "price": "215.000"
+      },
+      {
+          "unit": "5L",
+          "orginalPrice": "2.020.000",
+          "price": "920.000"
+      },
+      {
+          "unit": "15L",
+          "orginalPrice": "6.005.000",
+          "price": "2.690.000"
+      }
+    ],
     "shortDescription": "Nhà sang trọng, Sống trong lành",
     "usq": [
       "Làm sạch không khí",
@@ -57,7 +73,23 @@
     "cardImages": ["majestic-dep-hoan-hao-mo-cover.webp"],
     "cardTitle": "Giúp mặt tường luôn đẹp và bền màu",
     "cardDescription": "Vẻ đẹp hoàn thiện của Majestic Đẹp Hoàn Hảo biến ngôi nhà của bạn thành một không gian sống đáng mơ ước. Với màu sắc rực rỡ và khả năng bền màu theo thời gian, ngôi nhà của bạn sẽ trở thành niềm ao ước của nhiều người.",
-    "price": "195.000 vnđ / 1L",
+    "price": [
+      {
+          "unit": "1L",
+          "orginalPrice": "405.000",
+          "price": "195.000"
+      },
+      {
+          "unit": "5L",
+          "orginalPrice": "1.730.000",
+          "price": "820.000"
+      },
+      {
+          "unit": "15L",
+          "orginalPrice": "4.940.000",
+          "price": "2.150.000"
+      }
+    ],
     "stat": {
       "dryTime": "2 giờ",
       "finish": "Lớp hoàn thiện mờ",
@@ -85,7 +117,23 @@
     "cardImages": ["majestic-dep-hoan-hao-mo-cover.webp"],
     "cardTitle": "Giúp mặt tường luôn đẹp và bền màu",
     "cardDescription": "Vẻ đẹp hoàn thiện của Majestic Đẹp Hoàn Hảo (Bóng) biến ngôi nhà của bạn thành một không gian sống đáng mơ ước. Với màu sắc rực rỡ và khả năng bền màu theo thời gian, ngôi nhà của bạn sẽ trở thành niềm ao ước của nhiều người.",
-    "price": "195.000 vnđ / 1L",
+    "price": [
+      {
+          "unit": "1L",
+          "orginalPrice": "405.000",
+          "price": "195.000"
+      },
+      {
+          "unit": "5L",
+          "orginalPrice": "1.730.000",
+          "price": "830.000"
+      },
+      {
+          "unit": "15L",
+          "orginalPrice": "4.940.000",
+          "price": "2.250.000"
+      }
+    ],
     "stat": {
       "dryTime": "2 giờ",
       "coverage": "10.5 m2",
@@ -116,7 +164,18 @@
     "cardImages": ["jotashield-ben-mau-toi-uu-cover.webp"],
     "cardTitle": "Sơn ngoại thất tốt nhất",
     "cardDescription": "Jotashield Bền Màu Tối Ưu mang đến cho ngôi nhà của bạn sự bảo vệ tốt nhất trước thời tiết nhiệt đới khắc nghiệt. Sơn đã qua kiểm nghiệm và được chứng minh đầy đủ bởi các cơ sở kiểm nghiệm độc lập là loại sơn ngoại thất tốt nhất hiện nay. Công nghệ Chất tạo màu Tiên tiến của Jotun đảm bảo màu sắc bền đẹp, chống lại tia UV Việc sử dụng công nghệ diệt khuẩn ở mức độ tối ưu giúp ngăn chặn sự hình thành của tảo và nấm mốc, giữ cho ngôi nhà của bạn luôn được bảo vệ.",
-    "price": "310.000 vnđ / 1L",
+    "price": [
+      {
+          "unit": "1L",
+          "orginalPrice": "635.000",
+          "price": "310.000"
+      },
+      {
+          "unit": "5L",
+          "orginalPrice": "3.090.000",
+          "price": "1.420.000"
+      }
+    ],
     "stat": {
       "dryTime": "2 giờ",
       "finish": "Độ bóng trung bình",
@@ -148,7 +207,23 @@
     "cardImages": ["jotashield-chong-phai-mau-cover.webp"],
     "cardTitle": "Bảo vệ vượt trội với màu sắc bền lâu",
     "cardDescription": "Jotashield Chống Phai Màu được phát triển với công nghệ chất tạo màu tiên tiến, giúp chống lại sự hấp thụ và phản xạ tia tử ngoại mặt trời, ngăn ngừa phai màu và giữ cho lớp sơn bền đẹp theo thời gian. Màu sắc của sản phẩm được các chuyên gia Jotun nghiên cứu và lựa chọn kỹ lưỡng, góp phần làm đẹp cho ngôi nhà của bạn. Đồng thời, sản phẩm còn ngăn chặn vệt nước, giữ cho ngôi nhà luôn sạch như mới trong thời gian dài.",
-    "price": "280.000 vnđ / 1L",
+    "price": [
+      {
+          "unit": "1L",
+          "orginalPrice": "500.000",
+          "price": "280.000"
+      },
+      {
+          "unit": "5L",
+          "orginalPrice": "2.425.000",
+          "price": "1.170.000"
+      },
+      {
+          "unit": "15L",
+          "orginalPrice": "7.145.000",
+          "price": "3.330.000"
+      }
+    ],
     "stat": {
       "dryTime": "2 giờ",
       "finish": "Độ bóng trung bình",
