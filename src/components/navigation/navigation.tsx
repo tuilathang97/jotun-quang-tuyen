@@ -13,12 +13,14 @@ import { IoHomeOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { TiInfoLargeOutline } from "react-icons/ti";
 import Image from 'next/image'
+import Alert from "@/components/alert";
 
 function Navigation() {
     return (
         <nav className="fixed z-40 w-full bottom-0 md:top-0 md:bottom-auto">
+            <Alert />
             <header className="h-20 px-0 md:px-6 bg-accent">
-                <div className="flex items-center justify-center md:justify-between h-20 py-2 md:py-6">
+                <div className="mx-auto px-5 max-w-6xl flex items-center justify-center md:justify-between h-20 py-2 md:py-6">
                     <div className="w-full md:w-auto flex justify-evenly md:justify-center items-center">
                         <a className="hidden lg:block mr-6" href="/">
                           <Image src="/images/jotun.svg" width={120} height={24} alt="main logo"></Image>

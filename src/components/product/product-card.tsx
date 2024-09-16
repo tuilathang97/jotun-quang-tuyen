@@ -35,7 +35,7 @@ export function ProductCard({ product } : { product : Product } ) {
               {/* placeholder */}
             </div>
             <div className="h-16 flex gap-2 justify-center items-center w-1/2  rounded-md text-yellow-700 font-bold">
-              {product.price}
+              {/* {product.price} */}
             </div>
           </div>
       </Card>
