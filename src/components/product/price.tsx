@@ -44,7 +44,7 @@ const Price = ({ product } : { product: Product }) => {
             <div className="h-16 flex gap-2 w-full flex-col mt-2 items-start rounded-md font-bold justify-start">
                 <span className=" flex flex-row">
                     <span className="line-through text-gray-500 font-light">{originalPrice}</span>
-                    <span className="border ml-[14px] no-underline bg-[#fff0e9] text-sm text-[#eb5757] w-fit h-[24px] p-[3px] flex justify-center items-center text-white rounded-md">
+                    <span className="border ml-[14px] no-underline bg-[#fff0e9] text-sm text-[#eb5757] w-fit h-[24px] p-[3px] flex justify-center items-center rounded-md">
                         -{calculateDiscountPercentage(price, originalPrice)}%
                     </span>
                 </span>
