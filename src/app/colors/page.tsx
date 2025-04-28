@@ -34,9 +34,7 @@ function Colors({}) {
                     <p className="text-xl text-center leading-8">Cửa hàng chúng tôi có đa dạng màu sắc hấp dẫn được trình bày dưới dạng khối sơn và mẫu giấy - giúp bạn có một điểm xuất phát để chọn màu sắc của mình.</p>
                 </>
             </Section>
-            <>
-                <ColorSection colors={colors}/>
-            </>
+            <ColorSection colors={colors}/>
             <AlertDemo/>
         </>
     )
@@ -45,19 +43,21 @@ function Colors({}) {
 function ColorSection({colors} : { colors: Color[]}) {
     if (!colors) return null;
     return(
-        <div className="my-10">
-            <ul className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-y-4 gap-x-2 justify-center items-center mb-4">
-                {colors.map(color => {
-                    const bgColor = color.color;
-                    return (
-                        <li key={color.color} className="flex flex-col gap-2 mx-auto w-full">
-                            <div className={`w-full h-24 md:h-28 lg:h-36 flex justify-center items-center shadow-md text-gray-800`} style={{ backgroundColor: bgColor }}></div>
-                            <p className="h-5 text-xs text-ellipsis antialiased uppercase tracking-tight text-gray-600 leading-2">{ color.name }</p>
-                        </li>
-                    )
-                })}
-            </ul>
-        </div>
+        <Section>
+            <div className="my-10">
+                <ul className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-y-4 gap-x-2 justify-center items-center mb-4">
+                    {colors.map(color => {
+                        const bgColor = color.color;
+                        return (
+                            <li key={color.color} className="flex flex-col gap-2 mx-auto w-full">
+                                <div className={`w-full h-24 md:h-28 lg:h-36 flex justify-center items-center shadow-md text-gray-800`} style={{ backgroundColor: bgColor }}></div>
+                                <p className="h-5 text-xs text-ellipsis antialiased uppercase tracking-tight text-gray-600 leading-2">{ color.name }</p>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+        </Section>
     )
 }
 
