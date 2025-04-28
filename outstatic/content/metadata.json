@@ -1,0 +1,22 @@
+{
+  "commit": "",
+  "generated": "2025-04-28T13:28:52.980Z",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "1760977331",
+        "path": "outstatic/content/blogs/my-first-blog.mdx"
+      },
+      "author": {
+        "name": "thang nguyen",
+        "picture": "https://avatars.githubusercontent.com/u/50223061?v=4"
+      },
+      "collection": "blogs",
+      "publishedAt": "2025-04-28T14:09:00.838Z",
+      "slug": "my-first-blog",
+      "status": "draft",
+      "title": "my first blog"
+    }
+  ]
+}
