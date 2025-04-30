@@ -1,6 +1,12 @@
 {
   "title": "blogs",
-  "slug": "blogs",
   "type": "object",
-  "properties": {}
+  "properties": {
+    "shortDescription": {
+      "required": false,
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Short Description"
+    }
+  }
 }
