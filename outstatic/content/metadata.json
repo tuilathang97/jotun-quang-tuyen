@@ -1,11 +1,11 @@
 {
-  "commit": "6a463356aa734a010f7ea8e93b2afa14d9f51a48",
-  "generated": "2025-04-28T13:29:02.782Z",
+  "commit": "3d41fbffe5039ac1dedf62b55861a8207445c082",
+  "generated": "2025-04-30T05:42:53.258Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "6a463356aa734a010f7ea8e93b2afa14d9f51a48",
-        "hash": "3100434859",
+        "commit": "3d41fbffe5039ac1dedf62b55861a8207445c082",
+        "hash": "519653325",
         "path": "outstatic/content/blogs/my-first-blog.mdx"
       },
       "author": {
@@ -14,6 +14,7 @@
       },
       "collection": "blogs",
       "publishedAt": "2025-04-28T14:09:00.838Z",
+      "shortDescription": "abcedfc",
       "slug": "my-first-blog",
       "status": "published",
       "title": "my first blog"
