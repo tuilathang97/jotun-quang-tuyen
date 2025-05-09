@@ -8,6 +8,8 @@ import Section from "@/components/section"
 import { fetchArrayJson } from "@/utils/utils"
 import { Product } from "./product/[id]/page"
 import Image from 'next/image';
+import Navigation from "@/components/navigation"
+import Footer from "@/components/footer"
 
 function getProducts(type: 'exterior' | 'interior'): Product[] | null | undefined {
   const products = fetchArrayJson<Product>('products');
@@ -43,8 +45,6 @@ export default function Home() {
         <Heading id="interior">Sơn nội thất</Heading>
         <ProductList products={interiorProducts} />
       </Section>
-
-
     </>
   )
 }

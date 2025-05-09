@@ -1,4 +1,4 @@
-import { Product } from "@/app/product/[id]/page";
+import { Product } from "@/app/(jotun)/product/[id]/page";
 import ProductCard from "./product-card";
 
 

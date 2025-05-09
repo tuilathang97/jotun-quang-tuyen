@@ -1,6 +1,6 @@
 'use client'
 
-import { Product, PriceProps } from "@/app/product/[id]/page";
+import { Product, PriceProps } from "@/app/(jotun)/product/[id]/page";
 import React from "react";
 import { Button } from "../ui/button";
 

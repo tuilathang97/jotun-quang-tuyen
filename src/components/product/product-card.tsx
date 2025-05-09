@@ -6,7 +6,7 @@ import {
   CardContent,
   CardHeader,
 } from "@/components/ui/card"
-import { Product } from "@/app/product/[id]/page";
+import { Product } from "@/app/(jotun)/product/[id]/page";
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
 import Price from "./price";

@@ -1,10 +1,9 @@
-import Footer from '@/components/footer';
-import Navigation from '@/components/navigation';
-import type { Metadata } from 'next';
+import Footer from "@/components/footer";
+import Navigation from "@/components/navigation";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from 'next/font/google';
-import { Playfair_Display as PlayfairDisplay } from 'next/font/google'
-import './globals.css';
-import { Analytics } from "@vercel/analytics/react"
+import { Metadata } from "next";
+import '../globals.css';
 
 const playfairDisplay = Inter({ subsets: ['vietnamese'] })
 
@@ -21,11 +20,7 @@ export const metadata: Metadata = {
   bookmarks: "https://jotunlonghau.com"
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function JotunLayout({ children }: { children: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={`${playfairDisplay.className} relative`}>
@@ -39,3 +34,4 @@ export default function RootLayout({
     </html>
   )
 }
+

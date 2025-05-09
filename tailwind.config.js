@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  plugins: [require('@tailwindcss/typography')],
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -76,5 +77,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')], // Add typography plugin here
 }

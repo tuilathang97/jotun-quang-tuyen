@@ -2,7 +2,7 @@ import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
 import fs from 'fs';
 import path from 'path';
-import { Product } from "@/app/product/[id]/page";
+import { Product } from "@/app/(jotun)/product/[id]/page";
  
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
