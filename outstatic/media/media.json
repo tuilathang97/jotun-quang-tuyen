@@ -1,0 +1,39 @@
+{
+  "commit": "",
+  "generated": "Fri, 09 May 2025 13:21:24 GMT",
+  "media": [
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "0",
+        "path": "public/images/innovation-multicolor-colourcard.webp"
+      },
+      "alt": "",
+      "filename": "innovation-multicolor-colourcard.webp",
+      "publishedAt": "2025-05-09T13:21:24.250Z",
+      "type": "image"
+    },
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "0",
+        "path": "public/images/jotun.svg"
+      },
+      "alt": "",
+      "filename": "jotun.svg",
+      "publishedAt": "2025-05-09T13:21:24.250Z",
+      "type": "image"
+    },
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "0",
+        "path": "public/images/testing-for-the-extreme.webp"
+      },
+      "alt": "",
+      "filename": "testing-for-the-extreme.webp",
+      "publishedAt": "2025-05-09T13:21:24.250Z",
+      "type": "image"
+    }
+  ]
+}
