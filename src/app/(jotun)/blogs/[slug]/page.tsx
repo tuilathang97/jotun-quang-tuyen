@@ -5,6 +5,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { format } from 'date-fns';
 import * as cheerio from 'cheerio';
 import TableOfContents, { TocItem } from '@/components/TableOfContents';
+import type { Metadata, ResolvingMetadata } from 'next';
+import { generateBlogPostMetadata } from '@/lib/seo';
 
 import './blogs.scss';
 
@@ -114,62 +116,128 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = await getData(params);
 
+  console.log({post});
   return (
-    <div className="ftc-blog-post-page min-h-screen bg-gradient-to-br from-white to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <article className="max-w-3xl mx-auto bg-white p-6 sm:p-8 lg:p-10 rounded-lg shadow-md">
+    <div className="ftc-blog-post-page min-h-screen bg-gradient-to-br from-white to-gray-100">
+      {/* Container for both hero and content to ensure consistent width */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-3xl mx-auto">
+          {/* Hero Banner with Cover Image */}
+          {post.coverImage ? (
+            <div className="relative w-full h-[40vh] md:h-[50vh] mb-10 rounded-lg overflow-hidden shadow-lg">
+              <div className="absolute inset-0">
+                <img
+                  src={post.coverImage}
+                  alt={`Cover image for ${post.title}`}
+                  className="w-full h-full object-cover"
+                />
+                {/* Gradient overlay for better text visibility */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/60"></div>
+              </div>
 
-        <header className="mb-8">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{post.title}</h1>
-          <div className="flex items-center space-x-4 text-sm text-gray-500">
-            <div className="flex items-center space-x-2">
-              <Avatar className="h-8 w-8">
-                {post.author.picture && <AvatarImage src={post.author.picture} alt={post.author.name} />}
-                <AvatarFallback>{post.author.name.charAt(0)}</AvatarFallback>
-              </Avatar>
-              <span>By {post.author.name}</span>
+              {/* Hero Content */}
+              <div className="relative h-full flex flex-col justify-end">
+                <div className="p-6 sm:p-8 lg:p-10">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-md">
+                    {post.title}
+                  </h1>
+                  
+                  {post.shortDescription && (
+                    <p className="text-lg text-white/90 max-w-3xl mb-6 drop-shadow-sm">
+                      {post.shortDescription}
+                    </p>
+                  )}
+                  
+                  <div className="flex items-center space-x-4 text-sm text-white/80">
+                    <div className="flex items-center space-x-2">
+                      <Avatar className="h-8 w-8 border border-white/30">
+                        {post.author.picture && <AvatarImage src={post.author.picture} alt={post.author.name} />}
+                        <AvatarFallback className="bg-white/20 text-white">{post.author.name.charAt(0)}</AvatarFallback>
+                      </Avatar>
+                      <span>By {post.author.name}</span>
+                    </div>
+                    <span>•</span>
+                    <time dateTime={post.publishedAt}>
+                      {format(new Date(post.publishedAt), 'PPP')}
+                    </time>
+                  </div>
+                </div>
+              </div>
             </div>
-            <span>•</span>
-            <time dateTime={post.publishedAt}>
-              {format(new Date(post.publishedAt), 'PPP')} {/* Format date */}
-            </time>
-          </div>
-          {post.shortDescription && (
-            <p className="mt-4 text-lg text-gray-600">{post.shortDescription}</p>
+          ) : (
+            /* Alternative header for posts without cover image */
+            <div className="bg-gray-900 py-16 mb-10 rounded-lg shadow-lg">
+              <div className="p-6 sm:p-8 lg:p-10">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+                  {post.title}
+                </h1>
+                
+                {post.shortDescription && (
+                  <p className="text-lg text-white/90 max-w-3xl mb-6">
+                    {post.shortDescription}
+                  </p>
+                )}
+                
+                <div className="flex items-center space-x-4 text-sm text-white/80">
+                  <div className="flex items-center space-x-2">
+                    <Avatar className="h-8 w-8 border border-white/30">
+                      {post.author.picture && <AvatarImage src={post.author.picture} alt={post.author.name} />}
+                      <AvatarFallback className="bg-white/20 text-white">{post.author.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                    <span>By {post.author.name}</span>
+                  </div>
+                  <span>•</span>
+                  <time dateTime={post.publishedAt}>
+                    {format(new Date(post.publishedAt), 'PPP')}
+                  </time>
+                </div>
+              </div>
+            </div>
           )}
-        </header>
 
-        {post.coverImage && (
-          <img
-            src={post.coverImage}
-            alt={`Cover image for ${post.title}`}
-            className="w-full h-auto rounded-lg mb-8 shadow-sm"
-          />
-        )}
+          {/* Main Content */}
+          <article className="bg-white p-6 sm:p-8 lg:p-10 rounded-lg shadow-md">
+            <TableOfContents tocItems={post.tocItems} />
 
-        <TableOfContents tocItems={post.tocItems} />
-
-        <div
-          className="prose prose-lg max-w-none text-gray-800"
-          dangerouslySetInnerHTML={{ __html: post.htmlContentWithIds }}
-        />
-      </article>
+            <div
+              className="prose prose-lg max-w-none text-gray-800"
+              dangerouslySetInnerHTML={{ __html: post.htmlContentWithIds }}
+            />
+          </article>
+        </div>
+      </div>
     </div>
   );
 }
 
-// Optional: Add metadata generation
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = getDocumentBySlug('blogs', params.slug, ['title', 'shortDescription']);
+// Enhanced metadata generation for SEO
+export async function generateMetadata(
+  { params }: { params: { slug: string } },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const post = getDocumentBySlug('blogs', params.slug, [
+    'title',
+    'shortDescription',
+    'author',
+    'coverImage',
+    'publishedAt',
+    'slug'
+  ]);
 
   if (!post) {
-    return { title: 'Blog Post Not Found' };
+    return {
+      title: 'Blog Post Not Found',
+      description: 'The blog post you are looking for does not exist.'
+    };
   }
-  
-  const title = post.title as string || 'Blog Post';
-  const description = post.shortDescription as string || 'Read this blog post.';
 
-  return {
-    title: title,
-    description: description,
-  };
+  // Use the reusable function from our SEO utilities
+  return generateBlogPostMetadata({
+    title: post.title as string,
+    description: post.shortDescription as string,
+    slug: post.slug as string,
+    coverImage: post.coverImage as string,
+    publishedAt: post.publishedAt as string,
+    authorName: (post.author as { name?: string })?.name,
+  });
 }
