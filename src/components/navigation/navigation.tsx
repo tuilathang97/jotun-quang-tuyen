@@ -6,7 +6,7 @@ import { cn } from "@/utils/utils";
 import React from "react";
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import ScrollLink from "../scroll-link";
-import { FaCloudSunRain } from "react-icons/fa";
+import { FaCloudSunRain, FaRegNewspaper} from "react-icons/fa";
 import { IoBedOutline } from "react-icons/io5";
 import { IoColorPaletteOutline } from "react-icons/io5";
 import { IoHomeOutline } from "react-icons/io5";
@@ -114,10 +114,10 @@ export function NavigationMenuDemo() {
         <Colors />
 
         <NavigationMenuItem className="hidden md:block max-w-[300px] md:max-w-max">
-          <ScrollLink to="/about">
+          <ScrollLink to="/blogs">
             <span className={navigationMenuTriggerStyle()}>
-              <TiInfoLargeOutline className='h-6 w-6'/>
-              Giới thiệu
+              <FaRegNewspaper className='h-6 w-6'/>
+              Tin tức
             </span>
           </ScrollLink>
         </NavigationMenuItem>

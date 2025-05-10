@@ -59,6 +59,10 @@ const footers = [
                 url: '/about'
             },
             {
+                text: 'Tin tức',
+                url: '/blogs'
+            },
+            {
                 text: 'Bảng màu',
                 url: '/colors'
             },
