@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { format } from 'date-fns'; // Assuming date-fns is installed
 import { OstDocument } from 'outstatic';
+import Image from 'next/image';
 
 type BlogDocument = {
   slug: string;
@@ -14,6 +15,7 @@ type BlogDocument = {
     picture?: string;
   };
   shortDescription?: string;
+  coverImage?: string;
 }
 
 async function getBlogs(): Promise<BlogDocument[]> {
@@ -23,6 +25,7 @@ async function getBlogs(): Promise<BlogDocument[]> {
     'slug',
     'author',
     'shortDescription',
+    'coverImage',
   ]);
   return blogs;
 }
@@ -36,6 +39,19 @@ export default async function BlogsPage() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {blogs.map((blog) => (
           <Card key={blog.slug} className="flex flex-col bg-white shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg overflow-hidden">
+            {blog.coverImage && (
+              <div className="relative w-full h-48 overflow-hidden">
+                <Link href={`/blogs/${blog.slug}`}>
+                  <Image 
+                    src={blog.coverImage} 
+                    alt={blog.title || 'Blog post'} 
+                    fill 
+                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </Link>
+              </div>
+            )}
             <CardHeader>
               <Link href={`/blogs/${blog.slug}`} className="hover:underline">
                 <CardTitle className="text-xl font-semibold text-gray-900">{blog.title || 'Untitled'}</CardTitle>
