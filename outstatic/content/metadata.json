@@ -1,10 +1,10 @@
 {
-  "commit": "e77991fb090523eb0488339bd89c96e649716656",
-  "generated": "2025-05-09T13:05:12.944Z",
+  "commit": "03492bb116dc8ce8d0aa4a74f9b625e5f495402c",
+  "generated": "2025-05-10T04:46:25.908Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "e77991fb090523eb0488339bd89c96e649716656",
+        "commit": "03492bb116dc8ce8d0aa4a74f9b625e5f495402c",
         "hash": "2969281630",
         "path": "outstatic/content/blogs/my-first-blog.mdx"
       },
