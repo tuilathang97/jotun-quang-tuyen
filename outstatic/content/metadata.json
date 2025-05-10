@@ -1,11 +1,11 @@
 {
-  "commit": "03492bb116dc8ce8d0aa4a74f9b625e5f495402c",
-  "generated": "2025-05-10T04:46:25.908Z",
+  "commit": "f7e4cc19ad03a3208ee423be10349e1f5d5facf5",
+  "generated": "2025-05-10T05:25:57.701Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "03492bb116dc8ce8d0aa4a74f9b625e5f495402c",
-        "hash": "2969281630",
+        "commit": "f7e4cc19ad03a3208ee423be10349e1f5d5facf5",
+        "hash": "677321578",
         "path": "outstatic/content/blogs/my-first-blog.mdx"
       },
       "author": {
@@ -13,6 +13,7 @@
         "picture": "https://avatars.githubusercontent.com/u/50223061?v=4"
       },
       "collection": "blogs",
+      "coverImage": "/images/testing-for-the-extreme.webp",
       "publishedAt": "2025-04-28T14:09:00.838Z",
       "shortDescription": "abcedfc",
       "slug": "my-first-blog",
