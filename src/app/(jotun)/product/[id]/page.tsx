@@ -33,8 +33,10 @@ export interface PriceProps {
     unit: string
 }
 
-function ProductDetail({ params } : { params: { id: string } }) {
-    const product = getProduct(params.id);
+type Params = Promise<{ id: string }>
+
+async function ProductDetail({ params } : { params: Params }) {
+    const product = getProduct((await params).id);
     if (!product) {
         return <></>;
     }

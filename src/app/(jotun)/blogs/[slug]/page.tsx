@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { getDocumentBySlug, getDocumentSlugs } from 'outstatic/server';
 import markdownToHtml from '@/lib/markdownToHTML';
 import { notFound } from 'next/navigation';
@@ -7,6 +8,7 @@ import * as cheerio from 'cheerio';
 import TableOfContents, { TocItem } from '@/components/TableOfContents';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { generateBlogPostMetadata } from '@/lib/seo';
+import Image from 'next/image';
 
 import './blogs.scss';
 
@@ -21,7 +23,6 @@ function slugify(text: string): string {
     .replace(/--+/g, '-'); // Replace multiple - with single -
 }
 
-// Define the structure for a single blog post
 interface BlogPost {
   title: string;
   publishedAt: string;
@@ -35,15 +36,15 @@ interface BlogPost {
   shortDescription?: string;
 }
 
-// Define the structure for the processed post including HTML content
 interface ProcessedBlogPost extends BlogPost {
   htmlContentWithIds: string;
   tocItems: TocItem[];
 }
 
-// Fetch data for a specific blog post by slug
-async function getData(params: { slug: string }): Promise<ProcessedBlogPost> {
-  const doc = getDocumentBySlug('blogs', params.slug, [
+type Params = Promise<{ slug: string }>
+
+async function getData(slug: string): Promise<ProcessedBlogPost> {
+  const doc = getDocumentBySlug('blogs', slug, [
     'title',
     'publishedAt',
     'slug',
@@ -113,10 +114,9 @@ export async function generateStaticParams() {
 }
 
 // The Blog Post Page Component
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = await getData(params);
+export default async function BlogPostPage({ params }: { params: Params }) {
+  const post = await getData((await params).slug);
 
-  console.log({post});
   return (
     <div className="ftc-blog-post-page min-h-screen bg-gradient-to-br from-white to-gray-100">
       {/* Container for both hero and content to ensure consistent width */}
@@ -126,10 +126,14 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
           {post.coverImage ? (
             <div className="relative w-full h-[40vh] md:h-[50vh] mb-10 rounded-lg overflow-hidden shadow-lg">
               <div className="absolute inset-0">
-                <img
+                <Image
                   src={post.coverImage}
                   alt={`Cover image for ${post.title}`}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority
+                  className="object-cover"
+                  style={{ objectPosition: 'center' }}
                 />
                 {/* Gradient overlay for better text visibility */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/60"></div>
@@ -210,34 +214,25 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   );
 }
 
-// Enhanced metadata generation for SEO
 export async function generateMetadata(
-  { params }: { params: { slug: string } },
-  parent: ResolvingMetadata
+  { params }: { params: Params }
 ): Promise<Metadata> {
-  const post = getDocumentBySlug('blogs', params.slug, [
-    'title',
-    'shortDescription',
-    'author',
-    'coverImage',
-    'publishedAt',
-    'slug'
-  ]);
-
-  if (!post) {
+  try {
+    const post = await getData((await params).slug);
+    
+    // Use the reusable function from our SEO utilities
+    return generateBlogPostMetadata({
+      title: post.title,
+      description: post.shortDescription || '',
+      slug: post.slug,
+      coverImage: post.coverImage || '',
+      publishedAt: post.publishedAt,
+      authorName: post.author.name,
+    });
+  } catch (error) {
     return {
       title: 'Blog Post Not Found',
       description: 'The blog post you are looking for does not exist.'
     };
   }
-
-  // Use the reusable function from our SEO utilities
-  return generateBlogPostMetadata({
-    title: post.title as string,
-    description: post.shortDescription as string,
-    slug: post.slug as string,
-    coverImage: post.coverImage as string,
-    publishedAt: post.publishedAt as string,
-    authorName: (post.author as { name?: string })?.name,
-  });
 }

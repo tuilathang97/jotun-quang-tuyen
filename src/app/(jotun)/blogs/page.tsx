@@ -3,29 +3,27 @@ import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { format } from 'date-fns'; // Assuming date-fns is installed
+import { OstDocument } from 'outstatic';
 
-interface Blog {
-  title: string;
-  publishedAt: string; // Keep as string initially for fetching
+type BlogDocument = {
   slug: string;
-  author: {
-    name: string;
-    picture?: string; // Optional picture
+  title?: string;
+  publishedAt?: string;
+  author?: {
+    name?: string;
+    picture?: string;
   };
-  shortDescription?: string; // Optional short description
-  // Add other fields if needed, but these are the core ones for the list
+  shortDescription?: string;
 }
 
-async function getBlogs(): Promise<Blog[]> {
-  // Fetch only the necessary fields for the listing page
-  const blogs = getDocuments<Blog>('blogs', [
+async function getBlogs(): Promise<BlogDocument[]> {
+  const blogs = getDocuments('blogs', [
     'title',
     'publishedAt',
     'slug',
     'author',
     'shortDescription',
   ]);
-  // Outstatic returns documents sorted by publishedAt descending by default
   return blogs;
 }
 
@@ -40,7 +38,7 @@ export default async function BlogsPage() {
           <Card key={blog.slug} className="flex flex-col bg-white shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg overflow-hidden">
             <CardHeader>
               <Link href={`/blogs/${blog.slug}`} className="hover:underline">
-                <CardTitle className="text-xl font-semibold text-gray-900">{blog.title}</CardTitle>
+                <CardTitle className="text-xl font-semibold text-gray-900">{blog.title || 'Untitled'}</CardTitle>
               </Link>
               {blog.shortDescription && (
                 <CardDescription className="text-gray-600 mt-2">{blog.shortDescription}</CardDescription>
@@ -52,14 +50,16 @@ export default async function BlogsPage() {
             <CardFooter className="text-sm text-gray-500 border-t pt-4 mt-4 flex justify-between items-center">
               <div className="flex items-center space-x-2">
                 <Avatar className="h-6 w-6">
-                  {blog.author.picture && <AvatarImage src={blog.author.picture} alt={blog.author.name} />}
-                  <AvatarFallback>{blog.author.name.charAt(0)}</AvatarFallback>
+                  {blog.author?.picture && <AvatarImage src={blog.author.picture} alt={blog.author.name || 'Author'} />}
+                  <AvatarFallback>{blog.author?.name?.charAt(0) || 'A'}</AvatarFallback>
                 </Avatar>
-                <span>{blog.author.name}</span>
+                <span>{blog.author?.name || 'Anonymous'}</span>
               </div>
-              <time dateTime={blog.publishedAt}>
-                {format(new Date(blog.publishedAt), 'PPP')} {/* Format date */} 
-              </time>
+              {blog.publishedAt && (
+                <time dateTime={blog.publishedAt}>
+                  {format(new Date(blog.publishedAt), 'PPP')}
+                </time>
+              )}
             </CardFooter>
           </Card>
         ))}
