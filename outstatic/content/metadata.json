@@ -1,6 +1,6 @@
 {
-  "commit": "f7e4cc19ad03a3208ee423be10349e1f5d5facf5",
-  "generated": "2025-05-10T05:25:57.701Z",
+  "commit": "ab56ea38b5ac7521a1bda75bb1ca921123caeab2",
+  "generated": "2025-05-11T05:18:02.081Z",
   "metadata": [
     {
       "__outstatic": {
@@ -19,6 +19,24 @@
       "slug": "my-first-blog",
       "status": "published",
       "title": "my first blog"
+    },
+    {
+      "__outstatic": {
+        "commit": "ab56ea38b5ac7521a1bda75bb1ca921123caeab2",
+        "hash": "1224230251",
+        "path": "outstatic/content/blogs/gia-son-thang-5.mdx"
+      },
+      "author": {
+        "name": "gia son thang 5",
+        "picture": "https://avatars.githubusercontent.com/u/50223061?v=4"
+      },
+      "collection": "blogs",
+      "coverImage": "/images/innovation-multicolor-colourcard.webp",
+      "publishedAt": "2025-05-11T05:56:02.674Z",
+      "shortDescription": "asdasdasdasdasdsa",
+      "slug": "gia-son-thang-5",
+      "status": "published",
+      "title": "gia son thang 5"
     }
   ]
 }
