@@ -1,6 +1,6 @@
 {
-  "commit": "ab56ea38b5ac7521a1bda75bb1ca921123caeab2",
-  "generated": "2025-05-11T05:18:02.081Z",
+  "commit": "b8c0da106552341e9e69cd53afb10d160f2c3a4d",
+  "generated": "2025-05-11T05:23:33.722Z",
   "metadata": [
     {
       "__outstatic": {
@@ -37,6 +37,24 @@
       "slug": "gia-son-thang-5",
       "status": "published",
       "title": "gia son thang 5"
+    },
+    {
+      "__outstatic": {
+        "commit": "b8c0da106552341e9e69cd53afb10d160f2c3a4d",
+        "hash": "3227626641",
+        "path": "outstatic/content/blogs/son-jotun-chong-tham-jotashield-giai-phap-ben-vung-cho-moi-cong-trinh.mdx"
+      },
+      "author": {
+        "name": "thang nguyen",
+        "picture": "https://avatars.githubusercontent.com/u/50223061?v=4"
+      },
+      "collection": "blogs",
+      "coverImage": "/images/testing-for-the-extreme.webp",
+      "publishedAt": "2025-05-11T06:02:34.048Z",
+      "shortDescription": "Sơn Jotun Jotashield chống thấm hiệu quả, không phai màu, bền đẹp theo thời gian. Đại lý Jotun Long Hậu cung cấp sơn chất lượng với giá rẻ, cam kết chính hãng 100%.",
+      "slug": "son-jotun-chong-tham-jotashield-giai-phap-ben-vung-cho-moi-cong-trinh",
+      "status": "published",
+      "title": "Sơn Jotun Chống Thấm Jotashield – Giải Pháp Bền Vững Cho Mọi Công Trình\n"
     }
   ]
 }
