@@ -1,25 +1,7 @@
 {
-  "commit": "12cc6981ddfb5f5daba1a9e3ff51f524e4ea6923",
-  "generated": "2025-05-12T04:26:19.250Z",
+  "commit": "2fa4bf1de21da702c9b5236d82f86054d2432b31",
+  "generated": "2025-05-12T04:26:23.166Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "ab56ea38b5ac7521a1bda75bb1ca921123caeab2",
-        "hash": "1224230251",
-        "path": "outstatic/content/blogs/gia-son-thang-5.mdx"
-      },
-      "author": {
-        "name": "gia son thang 5",
-        "picture": "https://avatars.githubusercontent.com/u/50223061?v=4"
-      },
-      "collection": "blogs",
-      "coverImage": "/images/innovation-multicolor-colourcard.webp",
-      "publishedAt": "2025-05-11T05:56:02.674Z",
-      "shortDescription": "asdasdasdasdasdsa",
-      "slug": "gia-son-thang-5",
-      "status": "published",
-      "title": "gia son thang 5"
-    },
     {
       "__outstatic": {
         "commit": "b8c0da106552341e9e69cd53afb10d160f2c3a4d",
