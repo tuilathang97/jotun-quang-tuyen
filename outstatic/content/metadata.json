@@ -1,6 +1,6 @@
 {
-  "commit": "b8c0da106552341e9e69cd53afb10d160f2c3a4d",
-  "generated": "2025-05-11T05:23:33.722Z",
+  "commit": "ddad1babbe6a1d46c1c87a4041ecab120a8302c4",
+  "generated": "2025-05-12T04:25:47.676Z",
   "metadata": [
     {
       "__outstatic": {
@@ -55,6 +55,24 @@
       "slug": "son-jotun-chong-tham-jotashield-giai-phap-ben-vung-cho-moi-cong-trinh",
       "status": "published",
       "title": "Sơn Jotun Chống Thấm Jotashield – Giải Pháp Bền Vững Cho Mọi Công Trình\n"
+    },
+    {
+      "__outstatic": {
+        "commit": "ddad1babbe6a1d46c1c87a4041ecab120a8302c4",
+        "hash": "4224541598",
+        "path": "outstatic/content/blogs/jotashield-ben-mau-toan-dien.mdx"
+      },
+      "author": {
+        "name": "Thắng Nguyễn",
+        "picture": "https://avatars.githubusercontent.com/u/50223061?v=4"
+      },
+      "collection": "blogs",
+      "coverImage": "https://www.jotun.com/contentassetsjot03/60ec76c86a3d4b98915059e78baec61c/jotashield-infinity-colour-1440x870.jpg",
+      "publishedAt": "2025-05-12T04:00:43.132Z",
+      "shortDescription": "Sơn Jotun Jotashield Bền Màu Toàn Diện – sơn ngoại thất cao cấp, chống phai màu đến 12 năm, kháng tia UV, chống thấm vượt trội. Phân phối chính hãng tại Jotun Long Hậu.",
+      "slug": "jotashield-ben-mau-toan-dien",
+      "status": "published",
+      "title": "JOTASHIELD BỀN MÀU TOÀN DIỆN"
     }
   ]
 }
