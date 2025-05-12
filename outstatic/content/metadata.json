@@ -1,25 +1,7 @@
 {
-  "commit": "ddad1babbe6a1d46c1c87a4041ecab120a8302c4",
-  "generated": "2025-05-12T04:25:47.676Z",
+  "commit": "12cc6981ddfb5f5daba1a9e3ff51f524e4ea6923",
+  "generated": "2025-05-12T04:26:19.250Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "f7e4cc19ad03a3208ee423be10349e1f5d5facf5",
-        "hash": "677321578",
-        "path": "outstatic/content/blogs/my-first-blog.mdx"
-      },
-      "author": {
-        "name": "thang nguyen",
-        "picture": "https://avatars.githubusercontent.com/u/50223061?v=4"
-      },
-      "collection": "blogs",
-      "coverImage": "/images/testing-for-the-extreme.webp",
-      "publishedAt": "2025-04-28T14:09:00.838Z",
-      "shortDescription": "abcedfc",
-      "slug": "my-first-blog",
-      "status": "published",
-      "title": "my first blog"
-    },
     {
       "__outstatic": {
         "commit": "ab56ea38b5ac7521a1bda75bb1ca921123caeab2",
