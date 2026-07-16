@@ -8,6 +8,8 @@ import * as cheerio from 'cheerio';
 import TableOfContents, { TocItem } from '@/components/TableOfContents';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { generateBlogPostMetadata } from '@/lib/seo';
+import { blogPostingJsonLd, breadcrumbJsonLd } from '@/lib/structured-data';
+import JsonLd from '@/components/json-ld';
 import Image from 'next/image';
 
 import './blogs.scss';
@@ -119,6 +121,19 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
   return (
     <div className="ftc-blog-post-page min-h-screen bg-gradient-to-br from-white to-gray-100">
+      <JsonLd data={blogPostingJsonLd({
+        title: post.title,
+        description: post.shortDescription,
+        slug: post.slug,
+        coverImage: post.coverImage,
+        publishedAt: post.publishedAt,
+        authorName: post.author.name,
+      })} />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Trang chủ', path: '/' },
+        { name: 'Tin tức', path: '/blogs' },
+        { name: post.title, path: `/blogs/${post.slug}` },
+      ])} />
       {/* Container for both hero and content to ensure consistent width */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-3xl mx-auto">

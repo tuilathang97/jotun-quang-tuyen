@@ -1,6 +1,10 @@
+import JsonLd from "@/components/json-ld";
 import Price from "@/components/product/price";
 import Section from "@/components/section";
+import { generatePageMetadata } from "@/lib/seo";
+import { breadcrumbJsonLd, productJsonLd } from "@/lib/structured-data";
 import { fetchArrayJson, getProduct } from "@/utils/utils";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 export interface Product {
@@ -35,6 +39,25 @@ export interface PriceProps {
 
 type Params = Promise<{ id: string }>
 
+export function generateStaticParams() {
+    const products = fetchArrayJson<Product>('products');
+    return products.map((product) => ({ id: product.id.toString() }));
+}
+
+export async function generateMetadata({ params } : { params: Params }): Promise<Metadata> {
+    const product = getProduct((await params).id);
+    if (!product) {
+        return { title: 'Không tìm thấy sản phẩm' };
+    }
+    return generatePageMetadata({
+        title: `Sơn ${product.name} - Giá tốt, chính hãng`,
+        description: product.shortDescription || product.description,
+        keywords: [product.name.toLowerCase(), `sơn ${product.type === 'exterior' ? 'ngoại thất' : 'nội thất'}`],
+        path: `/product/${product.id}`,
+        image: product.cardImages?.[0] ? `/images/covers/${product.cardImages[0]}` : undefined,
+    });
+}
+
 async function ProductDetail({ params } : { params: Params }) {
     const product = getProduct((await params).id);
     if (!product) {
@@ -42,9 +65,15 @@ async function ProductDetail({ params } : { params: Params }) {
     }
     return(
         <div className="">
+            <JsonLd data={productJsonLd(product)} />
+            <JsonLd data={breadcrumbJsonLd([
+                { name: 'Trang chủ', path: '/' },
+                { name: product.type === 'exterior' ? 'Sơn ngoại thất' : 'Sơn nội thất', path: `/#${product.type}` },
+                { name: product.name, path: `/product/${product.id}` },
+            ])} />
             <Section className="md:mt-0">
                 <div className="flex justify-center flex-col md:flex-row items-center text-center md:max-w-[720px] md:mx-auto md:text-left md:gap-8 py-10 lg:py-20" >
-                    <Image height={180} width={140} src={`/images/products/${product.desktopImage}`} alt={""} />
+                    <Image height={180} width={140} src={`/images/products/${product.desktopImage}`} alt={`Thùng sơn ${product.name}`} />
                     <div className="md:py-10">
                         <h1 className="my-6 lg:my-0 lg:mb-4 font-semibold text-2xl leading-8">{product.name}</h1>
                         <p className="leading-6 mb-4">{product.description}</p>
@@ -56,7 +85,7 @@ async function ProductDetail({ params } : { params: Params }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 md:shadow-sm shadow-slate-400 bg-white">
                     <div className="">
                         {/* TODO: slider here */}
-                        <Image className="md:max-h-[500px]" height='300' width={'500'} style={{ width: '100%', height: 'auto'}} src={`/images/covers/${product.cardImages[0]}`} alt=''/>
+                        <Image className="md:max-h-[500px]" height='300' width={'500'} style={{ width: '100%', height: 'auto'}} src={`/images/covers/${product.cardImages[0]}`} alt={`Hình ảnh sơn ${product.name}`}/>
                     </div>
                     <div className="px-4 pt-6">
                         <div className="flex gap-4 justify-center flex-wrap">

@@ -1,18 +1,37 @@
 import { MetadataRoute } from 'next';
 import fs from 'fs';
 import path from 'path';
+import { siteConfig } from '@/lib/seo';
+import { fetchArrayJson } from '@/utils/utils';
+import type { Product } from './product/[id]/page';
 
-// Replace with your actual domain
-const BASE_URL = 'https://jotunlonghau.com';
+const BASE_URL = siteConfig.baseUrl;
 
-// Function to get all MDX slugs from the blogs directory
-function getBlogSlugs(): string[] {
+type BlogEntry = { slug: string; lastModified: Date };
+
+// Read blog slugs with their real last-modified time (from frontmatter, falling back to file mtime)
+function getBlogEntries(): BlogEntry[] {
   const blogsDirectory = path.join(process.cwd(), 'outstatic/content/blogs');
   try {
     const filenames = fs.readdirSync(blogsDirectory);
     return filenames
       .filter((filename) => filename.endsWith('.mdx') || filename.endsWith('.md'))
-      .map((filename) => filename.replace(/\.(mdx|md)$/, ''));
+      .map((filename) => {
+        const filePath = path.join(blogsDirectory, filename);
+        let lastModified = fs.statSync(filePath).mtime;
+        try {
+          const content = fs.readFileSync(filePath, 'utf-8');
+          const match = content.match(/publishedAt:\s*["']?([^"'\n]+)["']?/);
+          if (match) {
+            const published = new Date(match[1]);
+            if (!isNaN(published.getTime())) lastModified = published;
+          }
+        } catch {}
+        return {
+          slug: filename.replace(/\.(mdx|md)$/, ''),
+          lastModified,
+        };
+      });
   } catch (error) {
     console.error('Error reading blogs directory:', error);
     return [];
@@ -20,20 +39,26 @@ function getBlogSlugs(): string[] {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const blogSlugs = getBlogSlugs();
-
-  const blogPostEntries: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
-    url: `${BASE_URL}/blogs/${slug}`,
-    lastModified: new Date(), // You might want to get this from frontmatter or file stats
-    changeFrequency: 'weekly',
+  const blogPostEntries: MetadataRoute.Sitemap = getBlogEntries().map((entry) => ({
+    url: `${BASE_URL}/blogs/${entry.slug}`,
+    lastModified: entry.lastModified,
+    changeFrequency: 'monthly',
     priority: 0.7,
+  }));
+
+  const products = fetchArrayJson<Product>('products');
+  const productEntries: MetadataRoute.Sitemap = products.map((product) => ({
+    url: `${BASE_URL}/product/${product.id}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.9,
   }));
 
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
       lastModified: new Date(),
-      changeFrequency: 'yearly',
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
@@ -43,30 +68,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://jotunlonghau.com/#interior',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    {
-      url: 'https://jotunlonghau.com/#exterior',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    {
-      url: 'https://jotunlonghau.com/colors',
+      url: `${BASE_URL}/colors`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.8,
     },
     {
-      url: 'https://jotunlonghau.com/about',
+      url: `${BASE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
     },
   ];
 
-  return [...staticPages, ...blogPostEntries];
-} 
+  return [...staticPages, ...productEntries, ...blogPostEntries];
+}

@@ -1,5 +1,14 @@
+import { generatePageMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Giới thiệu đại lý sơn Jotun Long Hậu',
+  description: 'Jotun Long Hậu - đại lý sơn Jotun chính hãng tại 243 ĐT826C, Long Hậu, Cần Giuộc, Long An. Trung tâm pha màu chuyên nghiệp, tư vấn tận tâm, giá cả hợp lý.',
+  keywords: ['đại lý sơn jotun long an', 'cửa hàng sơn cần giuộc'],
+  path: '/about',
+});
 
 const About = () => {
     return (
