@@ -25,17 +25,26 @@ Nội dung evergreen là bài viết **không lỗi thời**, trả lời câu h
 | Chống thấm tường nhà | chống thấm tường, tường bị thấm nước |
 | Cách chọn màu sơn nhà đẹp | màu sơn nhà đẹp, chọn màu sơn |
 | Sơn nội thất vs sơn ngoại thất | sơn nội thất ngoại thất khác nhau |
+| Bảng giá sơn Jotun mới nhất | bảng giá sơn jotun, giá sơn jotun — **⚠ cập nhật giá + năm trong tiêu đề mỗi khi giá đổi** |
+| Sơn lại nhà cũ: các bước và chi phí | sơn lại nhà cũ |
+| Xử lý tường bị nấm mốc, bong tróc | tường bị mốc, sơn tường bị bong tróc |
+| So sánh các dòng sơn ngoại thất Jotun | jotashield hay tough shield, so sánh sơn jotun |
+| Sơn nhà mùa mưa được không | sơn nhà mùa mưa |
+| Màu sơn phòng khách đẹp | màu sơn phòng khách |
+| Màu sơn phòng ngủ đẹp | màu sơn phòng ngủ |
+| Sơn nhà cấp 4 hết bao nhiêu tiền | sơn nhà cấp 4 bao nhiêu tiền, chi phí sơn nhà |
+| Kinh nghiệm chọn thợ sơn | thợ sơn nhà, giám sát thi công sơn |
 
 ### Ý tưởng bài tiếp theo (đăng 2–4 bài/tháng)
 
-- Bảng giá sơn Jotun mới nhất (cập nhật định kỳ — bài này kéo traffic rất mạnh)
-- Sơn lại nhà cũ: các bước và chi phí
-- Cách xử lý tường bị nấm mốc, bong tróc
-- So sánh các dòng Jotashield: Chống Phai Màu vs Bền Màu Tối Ưu vs Tough Shield
-- Sơn nhà mùa mưa: được không và lưu ý gì?
-- Màu sơn phòng ngủ/phòng khách đẹp (mỗi phòng một bài)
-- Sơn nhà cấp 4 hết bao nhiêu tiền? (bài dạng chi phí rất nhiều người tìm)
-- Kinh nghiệm chọn thợ sơn và giám sát thi công
+- Sơn chống nóng cho nhà hướng Tây (dùng công nghệ giảm nhiệt Jotashield)
+- Cách sơn cửa sắt, cổng sắt không bị rỉ (Gardex)
+- Màu sơn mặt tiền nhà phố đẹp (bài màu tiếp theo trong series)
+- Màu sơn phòng bếp / phòng thờ / phòng trẻ em (mỗi phòng một bài)
+- Sơn nhà trọ, nhà cho thuê: chọn sơn gì tối ưu chi phí?
+- Cách dặm vá tường bị trầy xước, vết bẩn cứng đầu
+- Checklist nghiệm thu nhà mới sơn xong
+- Câu chuyện công trình thực tế tại Cần Giuộc/Long Hậu (kèm ảnh trước–sau — dạng bài này rất tốt cho SEO địa phương)
 
 ### Quy tắc viết bài chuẩn SEO (áp dụng cho mọi bài)
 
