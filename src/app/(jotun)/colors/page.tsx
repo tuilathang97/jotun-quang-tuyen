@@ -1,12 +1,21 @@
 import Heading from "@/components/heading";
 import Section from "@/components/section";
+import { generatePageMetadata } from "@/lib/seo";
 import { fetchArrayJson } from "@/utils/utils";
- 
+import type { Metadata } from "next";
+
 import {
   Alert,
   AlertDescription,
   AlertTitle,
 } from "@/components/ui/alert"
+
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Bảng màu sơn Jotun',
+  description: 'Khám phá bảng màu sơn Jotun đa dạng: xanh, vàng, cam, đỏ hồng, tím, nâu, xám. Pha màu vi tính chính xác tại cửa hàng Jotun Long Hậu, Cần Giuộc, Long An.',
+  keywords: ['bảng màu sơn jotun', 'màu sơn nhà đẹp', 'pha màu sơn'],
+  path: '/colors',
+});
 
 const avaiable_tones = ['green','yellow','orange','redpink','purple','blue','brown','grey'] as const;
 type Tone = typeof avaiable_tones[number];

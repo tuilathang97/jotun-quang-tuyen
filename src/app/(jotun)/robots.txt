@@ -1,4 +1,6 @@
 User-Agent: *
 Allow: /
+Disallow: /outstatic
+Disallow: /api/
 
 Sitemap: https://jotunlonghau.com/sitemap.xml

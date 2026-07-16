@@ -1,14 +1,44 @@
 import type { Metadata } from 'next';
 
 /**
- * Configuration for the site's metadata
+ * Configuration for the site's metadata.
+ * Single source of truth for business info — also used by structured data (JSON-LD).
  */
 export const siteConfig = {
   name: 'Jotun Long Hậu',
   baseUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://jotunlonghau.com',
-  defaultTitle: 'Jotun Long Hậu - Sơn và dịch vụ sơn chất lượng cao',
-  defaultDescription: 'Jotun Long Hậu cung cấp sơn và dịch vụ sơn chất lượng cao cho các ứng dụng công nghiệp và dân dụng.',
-  defaultKeywords: ['jotun', 'sơn', 'long hậu', 'dịch vụ sơn', 'chất lượng cao'],
+  defaultTitle: 'Jotun Long Hậu - Đại lý sơn Jotun chính hãng tại Long An',
+  defaultDescription:
+    'Đại lý sơn Jotun chính hãng tại Long Hậu, Cần Giuộc, Long An. Cung cấp sơn nội thất, sơn ngoại thất, sơn chống thấm Jotun giá tốt, pha màu vi tính chính xác, giao hàng tận nơi. Liên hệ 0898.271.703.',
+  defaultKeywords: [
+    'sơn jotun',
+    'đại lý sơn jotun',
+    'sơn jotun long an',
+    'sơn jotun cần giuộc',
+    'sơn nội thất',
+    'sơn ngoại thất',
+    'sơn chống thấm',
+    'jotashield',
+    'majestic',
+    'jotun long hậu',
+  ],
+  business: {
+    legalName: 'Cửa Hàng Sơn Khoa Minh Long Hậu',
+    phone: '+84898271703',
+    phoneDisplay: '0898.271.703',
+    address: {
+      street: '243 ĐT826C',
+      ward: 'Long Hậu',
+      district: 'Cần Giuộc',
+      province: 'Long An',
+      country: 'VN',
+    },
+    geo: {
+      latitude: 10.652181,
+      longitude: 106.687075,
+    },
+    mapUrl: 'https://maps.app.goo.gl/Js9YqWYvGkoci7hm9',
+  },
 };
 
 /**
@@ -35,35 +65,60 @@ export function generateKeywords(title: string, additionalTerms: string[] = []):
 }
 
 /**
- * Generate metadata for a standard page
+ * Turn a relative path into an absolute URL on the site's domain
+ */
+export function absoluteUrl(path: string = '/'): string {
+  return new URL(path, siteConfig.baseUrl).toString();
+}
+
+/**
+ * Generate metadata for a standard page.
+ * Pass `path` (e.g. '/colors') so the page gets a canonical URL.
  */
 export function generatePageMetadata({
   title,
   description,
   keywords = [],
+  path,
+  image,
 }: {
   title?: string;
   description?: string;
   keywords?: string[];
+  path?: string;
+  image?: string;
 }): Metadata {
-  const pageTitle = title 
-    ? `${title} | ${siteConfig.name}` 
+  const pageTitle = title
+    ? `${title} | ${siteConfig.name}`
     : siteConfig.defaultTitle;
-  
+
   const pageDescription = description || siteConfig.defaultDescription;
   const pageKeywords = [...keywords, ...siteConfig.defaultKeywords];
+  const pageUrl = absoluteUrl(path);
 
   return {
+    metadataBase: new URL(siteConfig.baseUrl),
     title: pageTitle,
     description: pageDescription,
     keywords: pageKeywords,
     publisher: siteConfig.name,
+    alternates: {
+      canonical: pageUrl,
+    },
     openGraph: {
       title: pageTitle,
       description: pageDescription,
-      url: siteConfig.baseUrl,
+      url: pageUrl,
       siteName: siteConfig.name,
+      locale: 'vi_VN',
       type: 'website',
+      ...(image ? { images: [{ url: image, width: 1200, height: 630, alt: pageTitle }] } : {}),
+    },
+    twitter: {
+      card: image ? 'summary_large_image' : 'summary',
+      title: pageTitle,
+      description: pageDescription,
+      ...(image ? { images: [image] } : {}),
     },
   };
 }
@@ -80,13 +135,13 @@ export function generateBlogPostMetadata({
   authorName,
 }: BlogPostSeoProps): Metadata {
   const postTitle = title || 'Blog Post';
-  const postDescription = description || 'Read this fascinating blog post.';
-  const author = authorName || 'Anonymous';
-  const postUrl = `${siteConfig.baseUrl}/blogs/${slug}`;
-  
+  const postDescription = description || siteConfig.defaultDescription;
+  const author = authorName || siteConfig.name;
+  const postUrl = absoluteUrl(`/blogs/${slug}`);
+
   // Generate keywords from the title and add blog-related terms
-  const keywords = generateKeywords(postTitle, ['blog', 'article', author]);
-  
+  const keywords = generateKeywords(postTitle, [...siteConfig.defaultKeywords]);
+
   // Open Graph images setup
   const openGraphImages = [];
   if (coverImage) {
@@ -99,7 +154,8 @@ export function generateBlogPostMetadata({
   }
 
   return {
-    title: postTitle,
+    metadataBase: new URL(siteConfig.baseUrl),
+    title: `${postTitle} | ${siteConfig.name}`,
     description: postDescription,
     keywords: keywords,
     authors: author ? [{ name: author }] : undefined,
@@ -112,20 +168,17 @@ export function generateBlogPostMetadata({
       description: postDescription,
       url: postUrl,
       siteName: siteConfig.name,
+      locale: 'vi_VN',
       images: openGraphImages,
       type: 'article',
-      publishedTime: publishedAt || new Date().toISOString(),
+      publishedTime: publishedAt || undefined,
       authors: author ? [author] : undefined,
     },
-    // Uncomment if you want to add Twitter card metadata
-    /*
     twitter: {
-      card: 'summary_large_image',
+      card: coverImage ? 'summary_large_image' : 'summary',
       title: postTitle,
       description: postDescription,
-      images: coverImage ? [coverImage] : [],
-      creator: '@yourhandle',
+      images: coverImage ? [coverImage] : undefined,
     },
-    */
   };
-} 
+}

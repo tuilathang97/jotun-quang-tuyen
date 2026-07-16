@@ -1,4 +1,6 @@
 import { getDocuments } from 'outstatic/server';
+import { generatePageMetadata } from '@/lib/seo';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -18,6 +20,13 @@ type BlogDocument = {
   coverImage?: string;
 }
 
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Cẩm nang sơn nhà & Tin tức',
+  description: 'Kinh nghiệm chọn sơn, cách tính lượng sơn, quy trình sơn nhà, chống thấm và phối màu — chia sẻ từ đại lý sơn Jotun chính hãng tại Long An.',
+  keywords: ['cẩm nang sơn nhà', 'kinh nghiệm sơn nhà', 'tin tức sơn jotun'],
+  path: '/blogs',
+});
+
 async function getBlogs(): Promise<BlogDocument[]> {
   const blogs = getDocuments('blogs', [
     'title',
@@ -35,7 +44,10 @@ export default async function BlogsPage() {
 
   return (
     <div className="container mx-auto px-4 py-8 min-h-screen bg-gradient-to-br from-white to-gray-100">
-      <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Our Blog</h1>
+      <h1 className="text-4xl font-bold mb-4 text-center text-gray-800">Cẩm nang sơn nhà & Tin tức</h1>
+      <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+        Kinh nghiệm chọn sơn, thi công và bảo vệ ngôi nhà của bạn — chia sẻ từ đội ngũ Jotun Long Hậu.
+      </p>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {blogs.map((blog) => (
           <Card key={blog.slug} className="flex flex-col bg-white shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg overflow-hidden">

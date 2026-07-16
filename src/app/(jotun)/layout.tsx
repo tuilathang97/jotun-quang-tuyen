@@ -1,29 +1,56 @@
 import Footer from "@/components/footer";
+import JsonLd from "@/components/json-ld";
 import Navigation from "@/components/navigation";
+import { siteConfig } from "@/lib/seo";
+import { localBusinessJsonLd } from "@/lib/structured-data";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from 'next/font/google';
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import '../globals.css';
 
-const playfairDisplay = Inter({ subsets: ['vietnamese'] })
+const inter = Inter({ subsets: ['vietnamese'] })
 
 export const metadata: Metadata = {
-  title: 'Sơn Jotun Long Hậu',
-  description: 'Chúng tôi tự hào giới thiệu đến bạn một nền tảng mua sắm trực tuyến hoàn hảo cho mọi nhu cầu sơn của bạn. Với hàng trăm loại sơn đa dạng và chất lượng từ các thương hiệu uy tín, chúng tôi cam kết mang đến cho bạn những sản phẩm tốt nhất để nâng tầm không gian sống và làm việc của bạn.',
+  metadataBase: new URL(siteConfig.baseUrl),
+  title: {
+    default: siteConfig.defaultTitle,
+    template: `%s`,
+  },
+  description: siteConfig.defaultDescription,
   applicationName: 'JotunLongHau',
-  keywords: ['sơn, sơn nội thất, sơn ngoại thất, jotun, sơn jotun, jotashield, majestic, sơn long hậu, sơn cần giờ, sơn quận 1',
-    'sơn quận 2', 'sơn quận 3', 'sơn quận 4', 'sơn quận 5', 'sơn quận 6', 'sơn quận 7', 'sơn quận 8', 'sơn quận 9', 'sơn quận gò vấp',
-    'sơn quận phú nhuận', 'sơn quận tân phú', 'sơn quận tân bình'
-  ],
-  viewport: "width=device-width, initial-scale=1",
+  keywords: siteConfig.defaultKeywords.concat([
+    'sơn jotun long hậu', 'sơn cần giuộc', 'jotun tough shield', 'jotun waterguard',
+    'sơn lót jotun', 'bảng màu sơn jotun', 'giá sơn jotun',
+  ]),
   robots: 'index, follow',
-  bookmarks: "https://jotunlonghau.com"
+  alternates: {
+    canonical: siteConfig.baseUrl,
+  },
+  openGraph: {
+    title: siteConfig.defaultTitle,
+    description: siteConfig.defaultDescription,
+    url: siteConfig.baseUrl,
+    siteName: siteConfig.name,
+    locale: 'vi_VN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: siteConfig.defaultTitle,
+    description: siteConfig.defaultDescription,
+  },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function JotunLayout({ children }: { children: React.ReactNode}) {
   return (
-    <html lang="en">
-      <body className={`${playfairDisplay.className} relative`}>
+    <html lang="vi">
+      <body className={`${inter.className} relative`}>
+        <JsonLd data={localBusinessJsonLd()} />
         <Navigation />
         <main className="min-h-[700px] pt-0 md:pt-[125px] bg-[#fbfbfb]">
           {children}
@@ -34,4 +61,3 @@ export default function JotunLayout({ children }: { children: React.ReactNode}) 
     </html>
   )
 }
-
