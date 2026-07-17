@@ -34,16 +34,17 @@ Nội dung evergreen là bài viết **không lỗi thời**, trả lời câu h
 | Màu sơn phòng ngủ đẹp | màu sơn phòng ngủ |
 | Sơn nhà cấp 4 hết bao nhiêu tiền | sơn nhà cấp 4 bao nhiêu tiền, chi phí sơn nhà |
 | Kinh nghiệm chọn thợ sơn | thợ sơn nhà, giám sát thi công sơn |
+| Sơn chống nóng cho nhà hướng Tây | sơn chống nóng, nhà hướng tây |
+| Cách sơn cửa sắt, cổng sắt không bị rỉ | sơn cửa sắt, sơn cổng sắt chống rỉ |
+| Màu sơn mặt tiền nhà phố đẹp | màu sơn mặt tiền, màu sơn mặt tiền nhà phố |
+| Màu sơn phòng bếp đẹp | màu sơn phòng bếp |
+| Sơn nhà trọ, nhà cho thuê tối ưu chi phí | sơn nhà trọ, sơn nhà cho thuê |
+| Checklist nghiệm thu sơn nhà | nghiệm thu sơn nhà, kiểm tra sơn nhà |
 
 ### Ý tưởng bài tiếp theo (đăng 2–4 bài/tháng)
 
-- Sơn chống nóng cho nhà hướng Tây (dùng công nghệ giảm nhiệt Jotashield)
-- Cách sơn cửa sắt, cổng sắt không bị rỉ (Gardex)
-- Màu sơn mặt tiền nhà phố đẹp (bài màu tiếp theo trong series)
-- Màu sơn phòng bếp / phòng thờ / phòng trẻ em (mỗi phòng một bài)
-- Sơn nhà trọ, nhà cho thuê: chọn sơn gì tối ưu chi phí?
+- Màu sơn phòng thờ / phòng trẻ em (mỗi phòng một bài, tiếp series màu)
 - Cách dặm vá tường bị trầy xước, vết bẩn cứng đầu
-- Checklist nghiệm thu nhà mới sơn xong
 - Câu chuyện công trình thực tế tại Cần Giuộc/Long Hậu (kèm ảnh trước–sau — dạng bài này rất tốt cho SEO địa phương)
 
 ### Quy tắc viết bài chuẩn SEO (áp dụng cho mọi bài)
