@@ -9,7 +9,7 @@ export const siteConfig = {
   baseUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://jotunlonghau.com',
   defaultTitle: 'Jotun Long Hậu - Đại lý sơn Jotun chính hãng tại Long An',
   defaultDescription:
-    'Đại lý sơn Jotun chính hãng tại Long Hậu, Cần Giuộc, Long An. Cung cấp sơn nội thất, sơn ngoại thất, sơn chống thấm Jotun giá tốt, pha màu vi tính chính xác, giao hàng tận nơi. Liên hệ 0898.271.703.',
+    'Đại lý sơn Jotun chính hãng tại Long Hậu, Cần Giuộc, Long An. Cung cấp sơn nội thất, sơn ngoại thất, sơn chống thấm Jotun giá tốt, pha màu vi tính chính xác, giao hàng tận nơi. Liên hệ 0937.025.674.',
   defaultKeywords: [
     'sơn jotun',
     'đại lý sơn jotun',
@@ -24,8 +24,8 @@ export const siteConfig = {
   ],
   business: {
     legalName: 'Cửa Hàng Sơn Khoa Minh Long Hậu',
-    phone: '+84898271703',
-    phoneDisplay: '0898.271.703',
+    phone: '+84937025674',
+    phoneDisplay: '0937.025.674',
     address: {
       street: '243 ĐT826C',
       ward: 'Long Hậu',
