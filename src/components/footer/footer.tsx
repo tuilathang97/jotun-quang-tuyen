@@ -122,7 +122,7 @@ function Footer() {
                         <ul>
                             <li><a className="underline" href="https://maps.app.goo.gl/Js9YqWYvGkoci7hm9">Google Maps</a></li>
                             <li>Địa chỉ: 243 ĐT826C, Long Hậu, Cần Giuộc, Long An</li>
-                            <li>Điện thoại: 0898.271.703</li>
+                            <li>Điện thoại: 0937.025.674</li>
                         </ul>
                     </div>
                     <div className='text-white flex justify-center mt-4 text-sm'>

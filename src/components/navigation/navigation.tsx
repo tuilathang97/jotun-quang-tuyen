@@ -28,9 +28,9 @@ function Navigation() {
                         <NavigationMenuDemo></NavigationMenuDemo>
                     </div>
                     <div>
-                        <a href="tel:0898271703" className='hidden md:flex gap-2 items-center p-2 border-2 rounded-lg bg-primary text-secondary'>
+                        <a href="tel:0937025674" className='hidden md:flex gap-2 items-center p-2 border-2 rounded-lg bg-primary text-secondary'>
                             <BsFillTelephoneFill />
-                            0898271703
+                            0937025674
                         </a>
                     </div>
                 </div>
@@ -123,7 +123,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
 
         <NavigationMenuItem className="md:hidden max-w-[300px] md:max-w-max">
-          <ScrollLink to="tel:0898271703">
+          <ScrollLink to="tel:0937025674">
             <span className={navigationMenuTriggerStyle()}>
               <BsTelephone className='h-6 w-6'/>
               Gọi điện

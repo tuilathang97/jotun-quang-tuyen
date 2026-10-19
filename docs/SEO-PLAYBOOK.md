@@ -6,7 +6,7 @@ Tài liệu hướng dẫn đội ngũ vận hành website tăng lượng khách
 
 Đây là những việc **quan trọng nhất** với một cửa hàng bán lẻ địa phương — phần lớn khách tìm "đại lý sơn jotun gần đây" trên Google Maps chứ không vào thẳng website:
 
-- [ ] **Google Business Profile** (https://business.google.com): tạo/xác minh hồ sơ doanh nghiệp với đúng tên, địa chỉ `243 ĐT826C, Long Hậu, Cần Giuộc, Long An`, SĐT `0898.271.703`, giờ mở cửa, ảnh cửa hàng, link website. Đăng ảnh công trình thực tế hàng tuần. **Xin khách hàng đánh giá 5 sao sau mỗi đơn hàng** — số lượng và chất lượng review là yếu tố xếp hạng local số 1.
+- [ ] **Google Business Profile** (https://business.google.com): tạo/xác minh hồ sơ doanh nghiệp với đúng tên, địa chỉ `243 ĐT826C, Long Hậu, Cần Giuộc, Long An`, SĐT `0937.025.674`, giờ mở cửa, ảnh cửa hàng, link website. Đăng ảnh công trình thực tế hàng tuần. **Xin khách hàng đánh giá 5 sao sau mỗi đơn hàng** — số lượng và chất lượng review là yếu tố xếp hạng local số 1.
 - [ ] **Google Search Console** (https://search.google.com/search-console): xác minh domain `jotunlonghau.com`, gửi sitemap `https://jotunlonghau.com/sitemap.xml`. Theo dõi từ khóa nào đang ra traffic mỗi tháng.
 - [ ] **Zalo Official Account**: khách Việt ở khu vực nông thôn/ven đô dùng Zalo nhiều hơn email. Tạo Zalo OA, gắn link vào footer website (hiện icon Zalo ở footer đang trỏ về `#` — cần cập nhật `src/components/footer/footer.tsx`).
 - [ ] **Facebook Page**: tương tự, tạo/cập nhật page và gắn link thật vào footer. Đăng lại mỗi bài blog mới lên page + các nhóm cư dân, nhóm xây dựng khu vực Cần Giuộc, Long Hậu, Nhà Bè.
